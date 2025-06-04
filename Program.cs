@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 // Дано 3 одномерных массива A, B и C разного размера
 // Для каждого из них найти требуемое значение, и затем использовать его для решения второй задачи
@@ -15,7 +16,49 @@ namespace Homework_4._5
    {
       static void Main(string[] args)
       {
-         Console.WriteLine("Hello World!");
+         // Переводит (,) в (.)
+         //System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
+
+         string nameArrayOne = "A";
+         string nameArrayTwo = "B";
+         string nameArrayThree = "C";
+
+         int elementsOne = ClassFor1DArray.NumberArrayElements(nameArrayOne);
+         int elementsTwo = ClassFor1DArray.NumberArrayElements(nameArrayTwo);
+         int elementsThree = ClassFor1DArray.NumberArrayElements(nameArrayThree);
+
+         string filePathOne = Path.GetFullPath("a.txt");
+         if (!File.Exists(filePathOne))
+         {
+            Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
+         }
+
+         string filePathTwo = Path.GetFullPath("b.txt");
+         if (!File.Exists(filePathTwo))
+         {
+            Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
+         }
+
+         string filePathThree = Path.GetFullPath("c.txt");
+         if (!File.Exists(filePathThree))
+         {
+            Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
+         }
+
+         double[] arrayDoubleOne = ClassFor1DArray.VvodArray(filePathOne, nameArrayOne);
+         double[] arrayDoubleTwo = ClassFor1DArray.VvodArray(filePathTwo, nameArrayTwo);
+         double[] arrayDoubleThree = ClassFor1DArray.VvodArray(filePathThree, nameArrayThree);
+
+         double[] arraySearchOne = ClassFor1DArray.InputArray(arrayDoubleOne, elementsOne, nameArrayOne);
+         double[] arraySearchTwo = ClassFor1DArray.InputArray(arrayDoubleTwo, elementsTwo, nameArrayTwo);
+         double[] arraySearchThree = ClassFor1DArray.InputArray(arrayDoubleThree, elementsThree, nameArrayThree);
+
+         int countOne = ClassFor1DArray.SearchingNegativeNumbers(arraySearchOne, nameArrayOne);
+         int countTwo = ClassFor1DArray.SearchingNegativeNumbers(arraySearchTwo, nameArrayTwo);
+         int countThree = ClassFor1DArray.SearchingNegativeNumbers(arraySearchThree, nameArrayThree);
+         ClassFor1DArray.ComparisonValue(countOne, countTwo, countThree);
+
+         Console.ReadKey();
       }
    }
 }
