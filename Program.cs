@@ -24,9 +24,6 @@ namespace Homework_4._5
          get(10d, 20d);
          get(7.5d, 19.5d);
 
-
-
-
          string nameArrayOne = "A";
          string nameArrayTwo = "B";
          string nameArrayThree = "C";
