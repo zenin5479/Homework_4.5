@@ -148,11 +148,7 @@ namespace Homework_4._5
                count++;
             }
 
-            //if (inputArray[i].Equals(flag))
-            //{
-            //   count++;
-            //}
-
+            // Сравниваем значения double используя оператор равенства ==
             //if (inputArray[i] == 0)
             //{
             //   count++;
