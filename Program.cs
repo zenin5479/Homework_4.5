@@ -18,6 +18,14 @@ namespace Homework_4._5
       {
          // Переводит (,) в (.)
          //System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
+         // calling get() method
+         get(5d, 5d);
+         get(5.5d, 4.5d);
+         get(10d, 20d);
+         get(7.5d, 19.5d);
+
+
+
 
          string nameArrayOne = "A";
          string nameArrayTwo = "B";
@@ -59,6 +67,23 @@ namespace Homework_4._5
          ClassFor1DArray.ComparisonValue(countOne, countTwo, countThree);
 
          Console.ReadKey();
+      }
+
+      public static void get(double value1, double value2)
+      {
+         // сравниваем оба значения double
+         // используя метод Equals(Double)
+         bool status = value1.Equals(value2);
+
+         // проверка статуса
+         if (status)
+         {
+            Console.WriteLine("{0} равно {1}", value1, value2);
+         }
+         else
+         {
+            Console.WriteLine("{0} не равно {1}", value1, value2);
+         }
       }
    }
 }
