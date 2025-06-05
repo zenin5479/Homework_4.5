@@ -136,17 +136,11 @@ namespace Homework_4._5
          int i = 0;
          while (i < inputArray.Length)
          {
-            // Сравниваем оба значения double используя метод Equals(Double)
+            // Сравниваем значения double используя метод Equals(Double)
             bool status = inputArray[i].Equals(flag);
-            // проверка статуса
             if (status)
             {
-               Console.WriteLine("{0} равно {1}", inputArray[i], flag);
                count++;
-            }
-            else
-            {
-               Console.WriteLine("{0} не равно {1}", inputArray[i], flag);
             }
             
             //if (inputArray[i].CompareTo(flag) == 0)
