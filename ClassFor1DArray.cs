@@ -143,8 +143,12 @@ namespace Homework_4._5
             i++;
          }
 
-         Console.WriteLine("В массиве {0} элементов равных нулю: {1}", nameArray, count);
-         if (count == 0)
+
+         if (count != 0)
+         {
+            Console.WriteLine("В массиве {0} элементов равных нулю: {1}", nameArray, count);
+         }
+         else
          {
             Console.WriteLine("В массиве {0} нет элементов равных нулю", nameArray);
          }
