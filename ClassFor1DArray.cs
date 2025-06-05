@@ -135,7 +135,7 @@ namespace Homework_4._5
          int i = 0;
          while (i < inputArray.Length)
          {
-            if (inputArray[i] < 0)
+            if (inputArray[i] == 0)
             {
                count++;
             }
@@ -143,10 +143,10 @@ namespace Homework_4._5
             i++;
          }
 
-         Console.WriteLine("В массиве {0} отрицательных элементов: {1}", nameArray, count);
+         Console.WriteLine("В массиве {0} элементов равных нулю: {1}", nameArray, count);
          if (count == 0)
          {
-            Console.WriteLine("В массиве {0} нет отрицательных элементов", nameArray);
+            Console.WriteLine("В массиве {0} нет элементов равных нулю", nameArray);
          }
 
          return count;
