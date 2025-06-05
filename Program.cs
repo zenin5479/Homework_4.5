@@ -53,9 +53,9 @@ namespace Homework_4._5
          double[] arraySearchTwo = ClassFor1DArray.InputArray(arrayDoubleTwo, elementsTwo, nameArrayTwo);
          double[] arraySearchThree = ClassFor1DArray.InputArray(arrayDoubleThree, elementsThree, nameArrayThree);
 
-         int countOne = ClassFor1DArray.SearchingNegativeNumbers(arraySearchOne, nameArrayOne);
-         int countTwo = ClassFor1DArray.SearchingNegativeNumbers(arraySearchTwo, nameArrayTwo);
-         int countThree = ClassFor1DArray.SearchingNegativeNumbers(arraySearchThree, nameArrayThree);
+         int countOne = ClassFor1DArray.SearchingNullNumbers(arraySearchOne, nameArrayOne);
+         int countTwo = ClassFor1DArray.SearchingNullNumbers(arraySearchTwo, nameArrayTwo);
+         int countThree = ClassFor1DArray.SearchingNullNumbers(arraySearchThree, nameArrayThree);
          ClassFor1DArray.ComparisonValue(countOne, countTwo, countThree);
 
          Console.ReadKey();
