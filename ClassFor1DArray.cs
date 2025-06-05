@@ -128,6 +128,31 @@ namespace Homework_4._5
          return outputArray;
       }
 
+
+      public static int SearchingNullNumbers(double[] inputArray, string nameArray)
+      {
+         int count = 0;
+         int i = 0;
+         while (i < inputArray.Length)
+         {
+            if (inputArray[i] < 0)
+            {
+               count++;
+            }
+
+            i++;
+         }
+
+         Console.WriteLine("В массиве {0} отрицательных элементов: {1}", nameArray, count);
+         if (count == 0)
+         {
+            Console.WriteLine("В массиве {0} нет отрицательных элементов", nameArray);
+         }
+
+         return count;
+      }
+
+
       public static int SearchingNegativeNumbers(double[] inputArray, string nameArray)
       {
          int count = 0;
