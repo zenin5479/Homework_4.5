@@ -70,10 +70,6 @@ namespace Homework_4._5
          {
             Console.WriteLine("{0} равно {1}", value1, value2);
          }
-         else
-         {
-            Console.WriteLine("{0} не равно {1}", value1, value2);
-         }
       }
    }
 }
