@@ -131,14 +131,20 @@ namespace Homework_4._5
 
       public static int SearchingNullNumbers(double[] inputArray, string nameArray)
       {
+         double flag = 0.00;
          int count = 0;
          int i = 0;
          while (i < inputArray.Length)
          {
-            if (inputArray[i] == 0)
+            if (inputArray[i].Equals(flag))
             {
                count++;
             }
+
+            //if (inputArray[i] == 0)
+            //{
+            //   count++;
+            //}
 
             i++;
          }
