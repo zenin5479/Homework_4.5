@@ -66,10 +66,6 @@ namespace Homework_4._5
          // сравниваем оба значения double используя метод Equals(Double)
          bool status = value1.Equals(value2);
          // проверка статуса
-         if (status)
-         {
-            Console.WriteLine("{0} равно {1}", value1, value2);
-         }
       }
    }
 }
