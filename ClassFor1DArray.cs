@@ -169,7 +169,6 @@ namespace Homework_4._5
          return count;
       }
 
-
       public static int SearchingNegativeNumbers(double[] inputArray, string nameArray)
       {
          int count = 0;
@@ -193,6 +192,7 @@ namespace Homework_4._5
          return count;
       }
 
+      // Не работает при a=b и c=2 надо находить минимум из 3 значений без условий
       public static void ComparisonValue(int a, int b, int c)
       {
          if (a == b && a == c)
