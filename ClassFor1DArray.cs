@@ -195,22 +195,39 @@ namespace Homework_4._5
       // Не работает при a=b и c=2 надо находить минимум из 3 значений без условий
       public static void ComparisonValue(int a, int b, int c)
       {
-         if (a == b && a == c)
+         int[] arr = { a, b, c };
+         // Поиск максимального элемента строки (без флагов bool)
+
+         int row = 0;
+         while (row < arr.Length)
          {
-            Console.WriteLine("Отрицательных элементов в массивах A, В, С равное количество");
+            // Cчитаем, что min - это первый элемент строки
+            int min = arr[0];
+            if (min < arr[row])
+            {
+               min = arr[row];
+            }
+
+            //Console.WriteLine("Максимум в строке {0} равен: {1}", rowOut, maxOut);
+            row++;
          }
-         if (a < b && a < c)
-         {
-            Console.WriteLine("Отрицательных элементов меньше в массиве A");
-         }
-         if (b < a && b < c)
-         {
-            Console.WriteLine("Отрицательных элементов меньше в массиве B");
-         }
-         if (c < a && c < b)
-         {
-            Console.WriteLine("Отрицательных элементов меньше в массиве C");
-         }
+
+         //if (a == b && a == c)
+         //{
+         //   Console.WriteLine("Отрицательных элементов в массивах A, В, С равное количество");
+         //}
+         //if (a < b && a < c)
+         //{
+         //   Console.WriteLine("Отрицательных элементов меньше в массиве A");
+         //}
+         //if (b < a && b < c)
+         //{
+         //   Console.WriteLine("Отрицательных элементов меньше в массиве B");
+         //}
+         //if (c < a && c < b)
+         //{
+         //   Console.WriteLine("Отрицательных элементов меньше в массиве C");
+         //}
       }
 
       public static double[,] VvodArray(int n, int m)
