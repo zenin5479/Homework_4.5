@@ -18,11 +18,6 @@ namespace Homework_4._5
       {
          // Переводит (,) в (.)
          //System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
-         // calling get() method
-         get(5d, 5d);
-         get(5.5d, 4.5d);
-         get(10d, 20d);
-         get(7.5d, 19.5d);
 
          string nameArrayOne = "A";
          string nameArrayTwo = "B";
