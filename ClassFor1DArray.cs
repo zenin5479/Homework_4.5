@@ -196,22 +196,21 @@ namespace Homework_4._5
       public static void ComparisonValue(int a, int b, int c)
       {
          int[] arr = { a, b, c };
-         // Поиск максимального элемента строки (без флагов bool)
-
-         int row = 0;
-         while (row < arr.Length)
+         // Поиск минимального элемента строки (без флагов bool)
+         int min = arr[0];
+         int counter = 0;
+         while (counter < arr.Length)
          {
-            // Cчитаем, что min - это первый элемент строки
-            int min = arr[0];
-            if (min < arr[row])
+            // Cчитаем, что минимум - это первый элемент строки
+            if (arr[counter] < min)
             {
-               min = arr[row];
+               min = arr[counter];
             }
 
-            //Console.WriteLine("Максимум в строке {0} равен: {1}", rowOut, maxOut);
-            row++;
+            counter++;
          }
-
+         Console.WriteLine("Минимум  равен: {0}", min);
+         
          //if (a == b && a == c)
          //{
          //   Console.WriteLine("Отрицательных элементов в массивах A, В, С равное количество");
