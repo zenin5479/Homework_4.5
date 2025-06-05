@@ -142,16 +142,17 @@ namespace Homework_4._5
             if (status)
             {
                Console.WriteLine("{0} равно {1}", inputArray[i], flag);
+               count++;
             }
             else
             {
                Console.WriteLine("{0} не равно {1}", inputArray[i], flag);
             }
             
-            if (inputArray[i].CompareTo(flag) == 0)
-            {
-               count++;
-            }
+            //if (inputArray[i].CompareTo(flag) == 0)
+            //{
+            //   count++;
+            //}
 
             //if (inputArray[i].Equals(flag))
             //{
