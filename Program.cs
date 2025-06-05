@@ -71,10 +71,8 @@ namespace Homework_4._5
 
       public static void get(double value1, double value2)
       {
-         // сравниваем оба значения double
-         // используя метод Equals(Double)
+         // сравниваем оба значения double используя метод Equals(Double)
          bool status = value1.Equals(value2);
-
          // проверка статуса
          if (status)
          {
