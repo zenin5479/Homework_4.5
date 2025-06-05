@@ -137,12 +137,12 @@ namespace Homework_4._5
          while (i < inputArray.Length)
          {
             // Сравниваем значения double используя метод Equals(Double)
-            if (inputArray[i].Equals(flag))
-            {
-               count++;
-            }
+            //if (inputArray[i].Equals(flag))
+            //{
+            //   count++;
+            //}
 
-            // Сравниваем значения double используя метод CompareTo(Double)
+            // Сравниваем значения double используя метод CompareTo(Double) 
             if (inputArray[i].CompareTo(flag) == 0)
             {
                count++;
