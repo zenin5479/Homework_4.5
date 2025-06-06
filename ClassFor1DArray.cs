@@ -168,7 +168,7 @@ namespace Homework_4._5
          return count;
       }
 
-  // Не работает при a=b и c=2 надо находить минимум из 3 значений без условий
+      // Не работает при a=b и c=2 надо находить минимум из 3 значений без условий
       public static void ComparisonValue(int a, int b, int c)
       {
          int[] arr = { a, b, c };
@@ -227,8 +227,6 @@ namespace Homework_4._5
 
          return count;
       }
-
-    
 
       public static double[,] VvodArray(int n, int m)
       {
