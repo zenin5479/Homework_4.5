@@ -149,10 +149,10 @@ namespace Homework_4._5
             }
 
             // Сравниваем значения double используя оператор равенства ==
-            //if (inputArray[i] == 0)
-            //{
-            //   count++;
-            //}
+            if (inputArray[i] == 0)
+            {
+               count++;
+            }
 
             i++;
          }
