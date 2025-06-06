@@ -10,8 +10,6 @@ using System.IO;
 // Быть внимательным при определении типа данных элементов массивов
 // В том из массивов, в котором нет нулей, заменить отрицательные элементы их номером
 
-// https://learn.microsoft.com/ru-ru/dotnet/api/system.io.streamwriter.writeline?view=netcore-3.1
-
 namespace Homework_4._5
 {
    internal class Program
