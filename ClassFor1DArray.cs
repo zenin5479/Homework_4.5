@@ -128,7 +128,6 @@ namespace Homework_4._5
          return outputArray;
       }
 
-
       public static int SearchingNullNumbers(double[] inputArray, string nameArray)
       {
          double flag = 0;
@@ -169,30 +168,7 @@ namespace Homework_4._5
          return count;
       }
 
-      public static int SearchingNegativeNumbers(double[] inputArray, string nameArray)
-      {
-         int count = 0;
-         int i = 0;
-         while (i < inputArray.Length)
-         {
-            if (inputArray[i] < 0)
-            {
-               count++;
-            }
-
-            i++;
-         }
-
-         Console.WriteLine("В массиве {0} отрицательных элементов: {1}", nameArray, count);
-         if (count == 0)
-         {
-            Console.WriteLine("В массиве {0} нет отрицательных элементов", nameArray);
-         }
-
-         return count;
-      }
-
-      // Не работает при a=b и c=2 надо находить минимум из 3 значений без условий
+  // Не работает при a=b и c=2 надо находить минимум из 3 значений без условий
       public static void ComparisonValue(int a, int b, int c)
       {
          int[] arr = { a, b, c };
@@ -228,6 +204,31 @@ namespace Homework_4._5
          //   Console.WriteLine("Отрицательных элементов меньше в массиве C");
          //}
       }
+
+      public static int SearchingNegativeNumbers(double[] inputArray, string nameArray)
+      {
+         int count = 0;
+         int i = 0;
+         while (i < inputArray.Length)
+         {
+            if (inputArray[i] < 0)
+            {
+               count++;
+            }
+
+            i++;
+         }
+
+         Console.WriteLine("В массиве {0} отрицательных элементов: {1}", nameArray, count);
+         if (count == 0)
+         {
+            Console.WriteLine("В массиве {0} нет отрицательных элементов", nameArray);
+         }
+
+         return count;
+      }
+
+    
 
       public static double[,] VvodArray(int n, int m)
       {
