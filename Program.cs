@@ -10,7 +10,6 @@ using System.IO;
 // Быть внимательным при определении типа данных элементов массивов
 // В том из массивов, в котором нет нулей, заменить отрицательные элементы их номером
 
-// https://learn.microsoft.com/ru-ru/dotnet/standard/io/how-to-write-text-to-a-file#example-write-and-append-text-with-the-file-class
 // https://learn.microsoft.com/ru-ru/dotnet/api/system.io.streamwriter.writeline?view=netcore-3.1
 
 namespace Homework_4._5
