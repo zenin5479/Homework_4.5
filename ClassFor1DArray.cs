@@ -171,6 +171,7 @@ namespace Homework_4._5
       // Не работает при a=b и c=2 надо находить минимум из 3 значений без условий
       public static void ComparisonValue(int a, int b, int c)
       {
+         string[] name = { "A", "B", "C" };
          int[] arr = { a, b, c };
          // Поиск минимального элемента строки (без флагов bool)
          int min = arr[0];
@@ -193,7 +194,7 @@ namespace Homework_4._5
             // Cчитаем, что минимум - это первый элемент строки
             if (arr[counter] == min)
             {
-               Console.WriteLine("В массиве {0} минимальное  равен: {1}", arr[counter] , min);
+               Console.WriteLine("В массиве {0} минимальное количество элементов равных нулю: {1}", name[counter] , min);
             }
 
             counter++;
