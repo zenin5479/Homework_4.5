@@ -187,6 +187,20 @@ namespace Homework_4._5
          }
          Console.WriteLine("Минимум  равен: {0}", min);
 
+         counter = 0;
+         while (counter < arr.Length)
+         {
+            // Cчитаем, что минимум - это первый элемент строки
+            if (arr[counter] == min)
+            {
+               Console.WriteLine("В массиве {0} минимальное  равен: {1}", arr[counter] , min);
+            }
+
+            counter++;
+         }
+         
+
+
          //if (a == b && a == c)
          //{
          //   Console.WriteLine("Отрицательных элементов в массивах A, В, С равное количество");
