@@ -199,8 +199,6 @@ namespace Homework_4._5
 
             counter++;
          }
-         
-
 
          //if (a == b && a == c)
          //{
