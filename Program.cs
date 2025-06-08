@@ -55,7 +55,6 @@ namespace Homework_4._5
 
          bool flagArrayOne = ClassFor1DArray.SearchingNull(arraySearchOne, nameArrayOne);
 
-
          //int countOne = ClassFor1DArray.SearchingNullNumbers(arraySearchOne, nameArrayOne);
          //int countTwo = ClassFor1DArray.SearchingNullNumbers(arraySearchTwo, nameArrayTwo);
          //int countThree = ClassFor1DArray.SearchingNullNumbers(arraySearchThree, nameArrayThree);
