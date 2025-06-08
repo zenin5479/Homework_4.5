@@ -54,18 +54,31 @@ namespace Homework_4._5
          double[] arraySearchThree = ClassFor1DArray.InputArray(arrayDoubleThree, elementsThree, nameArrayThree);
 
          bool flagArrayOne = ClassFor1DArray.SearchingNull(arraySearchOne, nameArrayOne);
+         if (flagArrayOne == false)
+         {
+            
+         }
+
+         //if (fla == false)
+         //{
+         //   zamenanol(a, na);
+         //   FILE* fp_finisha = fopen("finish.txt", "w");
+         //   if (fp_finisha == nullptr)
+         //   {
+         //      printf("Ошибка при открытии файла для записи\n");
+         //   }
+
+         //   vivod_vect(a, na, fp_finisha);
+         //   fclose(fp_finisha);
+         //}
 
          //int countOne = ClassFor1DArray.SearchingNullNumbers(arraySearchOne, nameArrayOne);
          //int countTwo = ClassFor1DArray.SearchingNullNumbers(arraySearchTwo, nameArrayTwo);
          //int countThree = ClassFor1DArray.SearchingNullNumbers(arraySearchThree, nameArrayThree);
+
          //ClassFor1DArray.ComparisonValue(countOne, countTwo, countThree);
 
          Console.ReadKey();
-      }
-
-      private static bool naitinol(object o, object na)
-      {
-         throw new NotImplementedException();
       }
    }
 }
