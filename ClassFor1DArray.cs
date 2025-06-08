@@ -209,7 +209,7 @@ namespace Homework_4._5
       }
 
       // Не работает при a=b и c=2 надо находить минимум из 3 значений без условий
-      public static void ComparisonValue(int a, int b, int c)
+      public static void Comparison(int a, int b, int c)
       {
          string[] name = { "A", "B", "C" };
          int[] arr = { a, b, c };
@@ -256,6 +256,29 @@ namespace Homework_4._5
          //{
          //   Console.WriteLine("Отрицательных элементов меньше в массиве C");
          //}
+      }
+
+
+
+      // Не работает при a=b и c=2 надо находить минимум из 3 значений без условий
+      public static void ComparisonValue(int a, int b, int c)
+      {
+         if (a == b && a == c)
+         {
+            Console.WriteLine("Отрицательных элементов в массивах A, В, С равное количество");
+         }
+         if (a < b && a < c)
+         {
+            Console.WriteLine("Отрицательных элементов меньше в массиве A");
+         }
+         if (b < a && b < c)
+         {
+            Console.WriteLine("Отрицательных элементов меньше в массиве B");
+         }
+         if (c < a && c < b)
+         {
+            Console.WriteLine("Отрицательных элементов меньше в массиве C");
+         }
       }
 
       public static int SearchingNegativeNumbers(double[] inputArray, string nameArray)
