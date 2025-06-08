@@ -128,16 +128,18 @@ namespace Homework_4._5
          return outputArray;
       }
 
-      public static int SearchingNullNumbers(double[] inputArray, string nameArray)
+      public static bool SearchingNullNumbers(double[] inputArray, string nameArray)
       {
          double flag = 0;
+         bool fl = false;
          int count = 0;
          int i = 0;
-         while (i < inputArray.Length)
+         while (i < inputArray.Length && fl == false)
          {
             // Сравниваем значения double используя метод CompareTo(Double) 
             if (inputArray[i].CompareTo(flag) == 0)
             {
+               fl = true;
                count++;
             }
 
@@ -164,8 +166,7 @@ namespace Homework_4._5
          {
             Console.WriteLine("В массиве {0} нет элементов равных нулю", nameArray);
          }
-
-         return count;
+         return fl;
       }
 
       // Не работает при a=b и c=2 надо находить минимум из 3 значений без условий

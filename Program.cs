@@ -53,12 +53,20 @@ namespace Homework_4._5
          double[] arraySearchTwo = ClassFor1DArray.InputArray(arrayDoubleTwo, elementsTwo, nameArrayTwo);
          double[] arraySearchThree = ClassFor1DArray.InputArray(arrayDoubleThree, elementsThree, nameArrayThree);
 
-         int countOne = ClassFor1DArray.SearchingNullNumbers(arraySearchOne, nameArrayOne);
-         int countTwo = ClassFor1DArray.SearchingNullNumbers(arraySearchTwo, nameArrayTwo);
-         int countThree = ClassFor1DArray.SearchingNullNumbers(arraySearchThree, nameArrayThree);
-         ClassFor1DArray.ComparisonValue(countOne, countTwo, countThree);
+         bool fla = ClassFor1DArray.SearchingNullNumbers(arraySearchOne, nameArrayOne);
+
+
+         //int countOne = ClassFor1DArray.SearchingNullNumbers(arraySearchOne, nameArrayOne);
+         //int countTwo = ClassFor1DArray.SearchingNullNumbers(arraySearchTwo, nameArrayTwo);
+         //int countThree = ClassFor1DArray.SearchingNullNumbers(arraySearchThree, nameArrayThree);
+         //ClassFor1DArray.ComparisonValue(countOne, countTwo, countThree);
 
          Console.ReadKey();
+      }
+
+      private static bool naitinol(object o, object na)
+      {
+         throw new NotImplementedException();
       }
    }
 }
