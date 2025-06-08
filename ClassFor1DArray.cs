@@ -130,33 +130,37 @@ namespace Homework_4._5
 
       public static bool SearchingNull(double[] inputArray, string nameArray)
       {
-         double flag = 0;
-         bool fl = false;
+
+         // numbercomparison
+         // flag
+
+         double numbercomparison = 0;
+         bool flag = false;
          int i = 0;
-         while (i < inputArray.Length && fl == false)
+         while (i < inputArray.Length && flag == false)
          {
             // Сравниваем значения double используя метод CompareTo(Double) 
-            if (inputArray[i].CompareTo(flag) == 0)
+            if (inputArray[i].CompareTo(numbercomparison) == 0)
             {
-               fl = true;
+               flag = true;
             }
 
             // Сравниваем значения double используя метод Equals(Double)
-            //if (inputArray[i].Equals(flag))
-            //{
-
-            //}
+            if (inputArray[i].Equals(numbercomparison))
+            {
+               flag = true;
+            }
 
             // Сравниваем значения double используя оператор равенства ==
-            //if (inputArray[i] == 0)
-            //{
-
-            //}
+            if (inputArray[i] == 0)
+            {
+               flag = true;
+            }
 
             i++;
          }
 
-         if (fl)
+         if (flag)
          {
             Console.WriteLine("В массиве {0} имеется элемент равный нулю", nameArray);
          }
@@ -166,7 +170,7 @@ namespace Homework_4._5
          }
 
 
-         return fl;
+         return flag;
       }
 
       public static int SearchingNullNumbers(double[] inputArray, string nameArray)
