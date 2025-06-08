@@ -131,33 +131,42 @@ namespace Homework_4._5
       public static bool SearchingNull(double[] inputArray, string nameArray)
       {
          double flag = 0;
-         int count = 0;
+         bool fl = false;
          int i = 0;
-         while (i < inputArray.Length)
+         while (i < inputArray.Length && fl == false)
          {
             // Сравниваем значения double используя метод CompareTo(Double) 
             if (inputArray[i].CompareTo(flag) == 0)
             {
-               count++;
+               fl = true;
             }
 
             // Сравниваем значения double используя метод Equals(Double)
             //if (inputArray[i].Equals(flag))
             //{
-            //   count++;
+
             //}
 
             // Сравниваем значения double используя оператор равенства ==
             //if (inputArray[i] == 0)
             //{
-            //   count++;
+
             //}
 
             i++;
          }
 
+         if (fl)
+         {
+            Console.WriteLine("В массиве {0} имеется элемент равный нулю", nameArray);
+         }
+         else
+         {
+            Console.WriteLine("В массиве {0} отсутствует элемент равный нулю", nameArray);
+         }
 
-         return count;
+
+         return fl;
       }
 
       public static int SearchingNullNumbers(double[] inputArray, string nameArray)
