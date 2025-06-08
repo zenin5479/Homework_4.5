@@ -241,8 +241,6 @@ namespace Homework_4._5
          }
       }
 
-
-
       // Не работает при a=b и c=2 надо находить минимум из 3 значений без условий
       public static void ComparisonValue(int a, int b, int c)
       {
