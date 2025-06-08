@@ -170,28 +170,28 @@ namespace Homework_4._5
 
       public static int SearchingNullNumbers(double[] inputArray, string nameArray)
       {
-         double flag = 0;
+         double numbercomparison = 0;
          int count = 0;
          int i = 0;
          while (i < inputArray.Length)
          {
             // Сравниваем значения double используя метод CompareTo(Double) 
-            if (inputArray[i].CompareTo(flag) == 0)
+            if (inputArray[i].CompareTo(numbercomparison) == 0)
             {
                count++;
             }
 
             // Сравниваем значения double используя метод Equals(Double)
-            //if (inputArray[i].Equals(flag))
-            //{
-            //   count++;
-            //}
+            if (inputArray[i].Equals(numbercomparison))
+            {
+               count++;
+            }
 
             // Сравниваем значения double используя оператор равенства ==
-            //if (inputArray[i] == 0)
-            //{
-            //   count++;
-            //}
+            if (inputArray[i] == 0)
+            {
+               count++;
+            }
 
             i++;
          }
