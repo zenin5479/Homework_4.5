@@ -130,10 +130,6 @@ namespace Homework_4._5
 
       public static bool SearchingNull(double[] inputArray, string nameArray)
       {
-
-         // numbercomparison
-         // flag
-
          double numbercomparison = 0;
          bool flag = false;
          int i = 0;
@@ -146,16 +142,16 @@ namespace Homework_4._5
             }
 
             // Сравниваем значения double используя метод Equals(Double)
-            if (inputArray[i].Equals(numbercomparison))
-            {
-               flag = true;
-            }
+            //if (inputArray[i].Equals(numbercomparison))
+            //{
+            //   flag = true;
+            //}
 
             // Сравниваем значения double используя оператор равенства ==
-            if (inputArray[i] == 0)
-            {
-               flag = true;
-            }
+            //if (inputArray[i] == 0)
+            //{
+            //   flag = true;
+            //}
 
             i++;
          }
