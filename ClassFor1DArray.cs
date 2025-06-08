@@ -208,7 +208,6 @@ namespace Homework_4._5
          return count;
       }
 
-      // Не работает при a=b и c=2 надо находить минимум из 3 значений без условий
       public static void Comparison(int a, int b, int c)
       {
          string[] name = { "A", "B", "C" };
