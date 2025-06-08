@@ -128,18 +128,16 @@ namespace Homework_4._5
          return outputArray;
       }
 
-      public static bool SearchingNullNumbers(double[] inputArray, string nameArray)
+      public static bool SearchingNull(double[] inputArray, string nameArray)
       {
          double flag = 0;
-         bool fl = false;
          int count = 0;
          int i = 0;
-         while (i < inputArray.Length && fl == false)
+         while (i < inputArray.Length)
          {
             // Сравниваем значения double используя метод CompareTo(Double) 
             if (inputArray[i].CompareTo(flag) == 0)
             {
-               fl = true;
                count++;
             }
 
@@ -166,7 +164,48 @@ namespace Homework_4._5
          {
             Console.WriteLine("В массиве {0} нет элементов равных нулю", nameArray);
          }
-         return fl;
+
+         return count;
+      }
+
+      public static int SearchingNullNumbers(double[] inputArray, string nameArray)
+      {
+         double flag = 0;
+         int count = 0;
+         int i = 0;
+         while (i < inputArray.Length)
+         {
+            // Сравниваем значения double используя метод CompareTo(Double) 
+            if (inputArray[i].CompareTo(flag) == 0)
+            {
+               count++;
+            }
+
+            // Сравниваем значения double используя метод Equals(Double)
+            //if (inputArray[i].Equals(flag))
+            //{
+            //   count++;
+            //}
+
+            // Сравниваем значения double используя оператор равенства ==
+            //if (inputArray[i] == 0)
+            //{
+            //   count++;
+            //}
+
+            i++;
+         }
+
+         if (count != 0)
+         {
+            Console.WriteLine("В массиве {0} элементов равных нулю: {1}", nameArray, count);
+         }
+         else
+         {
+            Console.WriteLine("В массиве {0} нет элементов равных нулю", nameArray);
+         }
+
+         return count;
       }
 
       // Не работает при a=b и c=2 надо находить минимум из 3 значений без условий
