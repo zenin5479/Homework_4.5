@@ -165,7 +165,6 @@ namespace Homework_4._5
             Console.WriteLine("В массиве {0} отсутствует элемент равный нулю", nameArray);
          }
 
-
          return flag;
       }
 

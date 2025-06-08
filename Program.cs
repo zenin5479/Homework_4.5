@@ -53,7 +53,7 @@ namespace Homework_4._5
          double[] arraySearchTwo = ClassFor1DArray.InputArray(arrayDoubleTwo, elementsTwo, nameArrayTwo);
          double[] arraySearchThree = ClassFor1DArray.InputArray(arrayDoubleThree, elementsThree, nameArrayThree);
 
-         bool fla = ClassFor1DArray.SearchingNull(arraySearchOne, nameArrayOne);
+         bool flagArrayOne = ClassFor1DArray.SearchingNull(arraySearchOne, nameArrayOne);
 
 
          //int countOne = ClassFor1DArray.SearchingNullNumbers(arraySearchOne, nameArrayOne);
