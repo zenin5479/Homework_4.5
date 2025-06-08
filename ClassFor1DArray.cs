@@ -227,6 +227,7 @@ namespace Homework_4._5
          }
          Console.WriteLine("Минимум  равен: {0}", min);
 
+         // Проверка массивов на минимум элементов
          counter = 0;
          while (counter < arr.Length)
          {
@@ -238,23 +239,6 @@ namespace Homework_4._5
 
             counter++;
          }
-
-         //if (a == b && a == c)
-         //{
-         //   Console.WriteLine("Отрицательных элементов в массивах A, В, С равное количество");
-         //}
-         //if (a < b && a < c)
-         //{
-         //   Console.WriteLine("Отрицательных элементов меньше в массиве A");
-         //}
-         //if (b < a && b < c)
-         //{
-         //   Console.WriteLine("Отрицательных элементов меньше в массиве B");
-         //}
-         //if (c < a && c < b)
-         //{
-         //   Console.WriteLine("Отрицательных элементов меньше в массиве C");
-         //}
       }
 
 
