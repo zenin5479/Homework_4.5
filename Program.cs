@@ -57,7 +57,8 @@ namespace Homework_4._5
          if (flagArrayOne == false)
          {
             double[] replacingArrayOne = ClassFor1DArray.ReplacingZero(arraySearchOne);
-            ClassFor1DArray.WriteArray(replacingArrayOne);
+            string[] arrayOne = ClassFor1DArray.VivodStringArray(replacingArrayOne);
+
          }
 
          //if (fla == false)

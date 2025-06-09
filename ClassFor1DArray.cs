@@ -192,14 +192,6 @@ namespace Homework_4._5
          return inputArray;
       }
 
-      public static void WriteArray(double[] arrayString)
-      {
-         // Запись массива строк в файл
-         Console.WriteLine("Запись массива строк в файл");
-         string filePath = AppContext.BaseDirectory + "c.txt";
-         File.WriteAllLines(filePath, arrayString);
-      }
-
       public static int SearchingNullNumbers(double[] inputArray, string nameArray)
       {
          double numbercomparison = 0;
@@ -480,7 +472,7 @@ namespace Homework_4._5
          return arrayMax;
       }
 
-      // ++
+      // Обновлен метод + 
       public static string[] VivodStringArray(double[] inputArray)
       {
          // Объединение одномерного массива максимальных значений строк double[]
@@ -515,7 +507,7 @@ namespace Homework_4._5
          File.WriteAllLines(filePath, stringArray);
       }
 
-      // ++
+      // Обновлен метод + 
       public static string[] VivodArrayString(double[] inputArray)
       {
          // Объединение одномерного массива максимальных значений строк double[]
