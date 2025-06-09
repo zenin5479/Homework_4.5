@@ -76,6 +76,8 @@ namespace Homework_4._5
             ClassFor1DArray.FileWriteString(arrayTwo, filePathFour);
          }
 
+         // Скорректировать запись в файл и добавление строк
+         // https://learn.microsoft.com/ru-ru/dotnet/api/system.io.file.create?view=netcore-3.1#system-io-file-create(system-string-system-int32-system-io-fileoptions)
 
          //if (fla == false)
          //{
