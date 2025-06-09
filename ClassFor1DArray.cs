@@ -181,16 +181,16 @@ namespace Homework_4._5
             }
 
             // Сравниваем значения double используя оператор равенства ==
-            //if (inputArray[i] == 0)
-            //{
-            //   flag = true;
-            //}
+            if (inputArray[i] < numbercomparison)
+            {
+               inputArray[i] = i;
+            }
 
             i++;
          }
 
 
-         return new double[] { };
+         return inputArray;
       }
 
       // ReplacingZero
