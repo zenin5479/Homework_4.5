@@ -480,6 +480,7 @@ namespace Homework_4._5
          return arrayMax;
       }
 
+      // ++
       public static string[] VivodStringArray(double[] inputArray)
       {
          // Объединение одномерного массива максимальных значений строк double[]
@@ -487,9 +488,9 @@ namespace Homework_4._5
          Console.WriteLine("Одномерный массив строк");
          StringBuilder stringModified = new StringBuilder();
          int row = 0;
-         while (row < inputArray.GetLength(0))
+         while (row < inputArray.Length)
          {
-            if (row != inputArray.GetLength(0) - 1)
+            if (row != inputArray.Length - 1)
             {
                stringModified.Append(inputArray[row] + " ");
             }
@@ -514,15 +515,16 @@ namespace Homework_4._5
          File.WriteAllLines(filePath, stringArray);
       }
 
+      // ++
       public static string[] VivodArrayString(double[] inputArray)
       {
          // Объединение одномерного массива максимальных значений строк double[]
          // в одномерный массив строк string[] для записи в файл
          Console.WriteLine("Одномерный массив строк");
          StringBuilder stringModified = new StringBuilder();
-         string[] arrayString = new string[inputArray.GetLength(0)];
+         string[] arrayString = new string[inputArray.Length];
          int row = 0;
-         while (row < inputArray.GetLength(0))
+         while (row < inputArray.Length)
          {
             stringModified.Append(inputArray[row]);
             string subLine = stringModified.ToString();
