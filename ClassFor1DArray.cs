@@ -128,7 +128,7 @@ namespace Homework_4._5
          return outputArray;
       }
 
-      public static bool SearchingNull(double[] inputArray, string nameArray)
+      public static bool findZero(double[] inputArray, string nameArray)
       {
          double numbercomparison = 0;
          bool flag = false;
