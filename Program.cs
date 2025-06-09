@@ -53,7 +53,7 @@ namespace Homework_4._5
          double[] arraySearchTwo = ClassFor1DArray.InputArray(arrayDoubleTwo, elementsTwo, nameArrayTwo);
          double[] arraySearchThree = ClassFor1DArray.InputArray(arrayDoubleThree, elementsThree, nameArrayThree);
 
-         bool flagArrayOne = ClassFor1DArray.findZero(arraySearchOne, nameArrayOne);
+         bool flagArrayOne = ClassFor1DArray.FindZero(arraySearchOne, nameArrayOne);
          if (flagArrayOne == false)
          {
             double[] replacingArrayOne = ClassFor1DArray.ReplacingZero(arraySearchOne);
