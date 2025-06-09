@@ -67,6 +67,16 @@ namespace Homework_4._5
             ClassFor1DArray.FileWriteString(arrayOne, filePathFour);
          }
 
+
+         bool flagArrayTwo = ClassFor1DArray.FindZero(arraySearchTwo, nameArrayTwo);
+         if (flagArrayTwo == false)
+         {
+            double[] replacingArrayTwo = ClassFor1DArray.ReplacingZero(arraySearchTwo);
+            string[] arrayTwo = ClassFor1DArray.VivodStringArray(replacingArrayTwo);
+            ClassFor1DArray.FileWriteString(arrayTwo, filePathFour);
+         }
+
+
          //if (fla == false)
          //{
          //   zamenanol(a, na); +
