@@ -192,8 +192,6 @@ namespace Homework_4._5
          return inputArray;
       }
 
-      // ReplacingZero
-
       public static int SearchingNullNumbers(double[] inputArray, string nameArray)
       {
          double numbercomparison = 0;
