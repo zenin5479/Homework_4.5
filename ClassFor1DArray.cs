@@ -189,7 +189,6 @@ namespace Homework_4._5
             i++;
          }
 
-
          return inputArray;
       }
 
