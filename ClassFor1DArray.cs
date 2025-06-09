@@ -168,9 +168,41 @@ namespace Homework_4._5
          return flag;
       }
 
+      public static double[] ReplacingZero(double[] inputArray, string nameArray)
+      {
+         double numbercomparison = 0;
+         bool flag = false;
+         int i = 0;
+         while (i < inputArray.Length && flag == false)
+         {
+            // Сравниваем значения double используя метод CompareTo(Double) 
+            if (inputArray[i].CompareTo(numbercomparison) < 0)
+            {
+
+               inputArray[i] = i;
+               flag = true;
+            }
+
+            // Сравниваем значения double используя метод Equals(Double)
+            //if (inputArray[i].Equals(numbercomparison))
+            //{
+            //   flag = true;
+            //}
+
+            // Сравниваем значения double используя оператор равенства ==
+            //if (inputArray[i] == 0)
+            //{
+            //   flag = true;
+            //}
+
+            i++;
+         }
 
 
+         return new double[] { };
+      }
 
+      // ReplacingZero
 
       //void zamenanol(double* x, int n)
       //{
