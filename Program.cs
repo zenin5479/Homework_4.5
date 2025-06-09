@@ -56,7 +56,7 @@ namespace Homework_4._5
          bool flagArrayOne = ClassFor1DArray.SearchingNull(arraySearchOne, nameArrayOne);
          if (flagArrayOne == false)
          {
-
+            //zamenanol(a, na);
          }
 
          //if (fla == false)

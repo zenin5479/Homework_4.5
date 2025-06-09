@@ -168,6 +168,21 @@ namespace Homework_4._5
          return flag;
       }
 
+
+
+
+
+      //void zamenanol(double* x, int n)
+      //{
+      //   for (int i = 0; i < n; i++)
+      //   {
+      //      if (x[i] < 0)
+      //      {
+      //         x[i] = i;
+      //      }
+      //   }
+      //}
+
       public static int SearchingNullNumbers(double[] inputArray, string nameArray)
       {
          double numbercomparison = 0;
