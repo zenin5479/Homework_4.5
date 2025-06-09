@@ -63,14 +63,14 @@ namespace Homework_4._5
 
          //if (fla == false)
          //{
-         //   zamenanol(a, na);
+         //   zamenanol(a, na); +
          //   FILE* fp_finisha = fopen("finish.txt", "w");
          //   if (fp_finisha == nullptr)
          //   {
          //      printf("Ошибка при открытии файла для записи\n");
          //   }
 
-         //   vivod_vect(a, na, fp_finisha);
+         //   vivod_vect(a, na, fp_finisha); +
          //   fclose(fp_finisha);
          //}
          
