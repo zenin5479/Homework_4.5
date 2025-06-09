@@ -57,6 +57,7 @@ namespace Homework_4._5
          if (flagArrayOne == false)
          {
             double[] replacingArrayOne = ClassFor1DArray.ReplacingZero(arraySearchOne);
+            ClassFor1DArray.WriteArray(replacingArrayOne);
          }
 
          //if (fla == false)
@@ -71,13 +72,7 @@ namespace Homework_4._5
          //   vivod_vect(a, na, fp_finisha);
          //   fclose(fp_finisha);
          //}
-
-         //int countOne = ClassFor1DArray.SearchingNullNumbers(arraySearchOne, nameArrayOne);
-         //int countTwo = ClassFor1DArray.SearchingNullNumbers(arraySearchTwo, nameArrayTwo);
-         //int countThree = ClassFor1DArray.SearchingNullNumbers(arraySearchThree, nameArrayThree);
-
-         //ClassFor1DArray.ComparisonValue(countOne, countTwo, countThree);
-
+         
          Console.ReadKey();
       }
    }
