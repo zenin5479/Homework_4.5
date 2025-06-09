@@ -168,7 +168,7 @@ namespace Homework_4._5
          return flag;
       }
 
-      public static double[] ReplacingZero(double[] inputArray, string nameArray)
+      public static double[] ReplacingZero(double[] inputArray)
       {
          double numbercomparison = 0;
          int i = 0;

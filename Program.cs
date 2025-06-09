@@ -56,7 +56,7 @@ namespace Homework_4._5
          bool flagArrayOne = ClassFor1DArray.SearchingNull(arraySearchOne, nameArrayOne);
          if (flagArrayOne == false)
          {
-            double[] replacingArrayOne = ClassFor1DArray.ReplacingZero(arraySearchOne, nameArrayOne);
+            double[] replacingArrayOne = ClassFor1DArray.ReplacingZero(arraySearchOne);
          }
 
          //if (fla == false)
