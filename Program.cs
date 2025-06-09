@@ -45,6 +45,12 @@ namespace Homework_4._5
             Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
          }
 
+         string filePathFour = Path.GetFullPath("finish.txt");
+         if (!File.Exists(filePathFour))
+         {
+            Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
+         }
+
          double[] arrayDoubleOne = ClassFor1DArray.VvodArray(filePathOne, nameArrayOne);
          double[] arrayDoubleTwo = ClassFor1DArray.VvodArray(filePathTwo, nameArrayTwo);
          double[] arrayDoubleThree = ClassFor1DArray.VvodArray(filePathThree, nameArrayThree);
@@ -59,7 +65,10 @@ namespace Homework_4._5
             double[] replacingArrayOne = ClassFor1DArray.ReplacingZero(arraySearchOne);
             string[] arrayOne = ClassFor1DArray.VivodStringArray(replacingArrayOne);
 
+            string filePath = AppContext.BaseDirectory + "b.txt";
          }
+
+
 
          //if (fla == false)
          //{

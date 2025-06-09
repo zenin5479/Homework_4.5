@@ -499,6 +499,13 @@ namespace Homework_4._5
          return stringArray;
       }
 
+      public static void FileWriteString(string[] stringArray, string filePath)
+      {
+         // Запись массива строк в файл
+         Console.WriteLine("Запись массива строк в файл");
+         File.WriteAllLines(filePath, stringArray);
+      }
+
       public static void FileWriteString(string[] stringArray)
       {
          // Запись массива строк в файл
