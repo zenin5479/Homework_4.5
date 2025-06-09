@@ -73,7 +73,7 @@ namespace Homework_4._5
          //   vivod_vect(a, na, fp_finisha); +
          //   fclose(fp_finisha);
          //}
-         
+
          Console.ReadKey();
       }
    }
