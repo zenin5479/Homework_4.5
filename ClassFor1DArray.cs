@@ -171,23 +171,14 @@ namespace Homework_4._5
       public static double[] ReplacingZero(double[] inputArray, string nameArray)
       {
          double numbercomparison = 0;
-         bool flag = false;
          int i = 0;
-         while (i < inputArray.Length && flag == false)
+         while (i < inputArray.Length)
          {
             // Сравниваем значения double используя метод CompareTo(Double) 
             if (inputArray[i].CompareTo(numbercomparison) < 0)
             {
-
                inputArray[i] = i;
-               flag = true;
             }
-
-            // Сравниваем значения double используя метод Equals(Double)
-            //if (inputArray[i].Equals(numbercomparison))
-            //{
-            //   flag = true;
-            //}
 
             // Сравниваем значения double используя оператор равенства ==
             //if (inputArray[i] == 0)
