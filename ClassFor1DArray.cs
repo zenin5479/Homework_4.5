@@ -499,6 +499,7 @@ namespace Homework_4._5
          return stringArray;
       }
 
+      // Обновлен метод + 
       public static void FileWriteString(string[] stringArray, string filePath)
       {
          // Запись массива строк в файл
