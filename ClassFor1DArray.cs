@@ -504,7 +504,7 @@ namespace Homework_4._5
       {
          // Запись массива строк в файл
          Console.WriteLine("Запись массива строк в файл");
-         File.WriteAllLines(filePath, stringArray);
+         File.AppendAllLines(filePath, stringArray);
       }
 
       public static void FileWriteString(string[] stringArray)
