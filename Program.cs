@@ -64,10 +64,8 @@ namespace Homework_4._5
          {
             double[] replacingArrayOne = ClassFor1DArray.ReplacingZero(arraySearchOne);
             string[] arrayOne = ClassFor1DArray.VivodStringArray(replacingArrayOne);
-
+            ClassFor1DArray.FileWriteString(arrayOne, filePathFour);
          }
-
-
 
          //if (fla == false)
          //{
