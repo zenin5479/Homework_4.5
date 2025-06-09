@@ -65,7 +65,6 @@ namespace Homework_4._5
             double[] replacingArrayOne = ClassFor1DArray.ReplacingZero(arraySearchOne);
             string[] arrayOne = ClassFor1DArray.VivodStringArray(replacingArrayOne);
 
-            string filePath = AppContext.BaseDirectory + "b.txt";
          }
 
 
