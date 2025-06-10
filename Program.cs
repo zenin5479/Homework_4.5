@@ -92,27 +92,30 @@ namespace Homework_4._5
          if (info.Length < 6)
          {
             string content = File.ReadAllText(filePathFour);
-            if(content.Length == 0)
+            if (content.Length == 0)
             {
                Console.WriteLine("Файл не пустой");
             }
+            else
+            {
+
+            }
+
+
+            //if (fla == false)
+            //{
+            //   zamenanol(a, na); +
+            //   FILE* fp_finisha = fopen("finish.txt", "w");
+            //   if (fp_finisha == nullptr)
+            //   {
+            //      printf("Ошибка при открытии файла для записи\n");
+            //   }
+
+            //   vivod_vect(a, na, fp_finisha); +
+            //   fclose(fp_finisha);
+            //}
+
+            Console.ReadKey();
          }
-
-
-         //if (fla == false)
-         //{
-         //   zamenanol(a, na); +
-         //   FILE* fp_finisha = fopen("finish.txt", "w");
-         //   if (fp_finisha == nullptr)
-         //   {
-         //      printf("Ошибка при открытии файла для записи\n");
-         //   }
-
-         //   vivod_vect(a, na, fp_finisha); +
-         //   fclose(fp_finisha);
-         //}
-
-         Console.ReadKey();
       }
    }
-}
