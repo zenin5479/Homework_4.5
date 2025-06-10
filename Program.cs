@@ -64,7 +64,7 @@ namespace Homework_4._5
          {
             double[] replacingArrayOne = ClassFor1DArray.ReplacingZero(arraySearchOne);
             string[] arrayOne = ClassFor1DArray.VivodStringArray(replacingArrayOne);
-            ClassFor1DArray.FileWriteString(arrayOne, filePathFour);
+            //ClassFor1DArray.FileWriteString(arrayOne, filePathFour);
          }
 
          bool flagArrayTwo = ClassFor1DArray.FindZero(arraySearchTwo, nameArrayTwo);
@@ -72,7 +72,7 @@ namespace Homework_4._5
          {
             double[] replacingArrayTwo = ClassFor1DArray.ReplacingZero(arraySearchTwo);
             string[] arrayTwo = ClassFor1DArray.VivodStringArray(replacingArrayTwo);
-            ClassFor1DArray.FileWriteString(arrayTwo, filePathFour);
+            //ClassFor1DArray.FileWriteString(arrayTwo, filePathFour);
          }
 
          // Скорректировать запись в файл и добавление строк
@@ -86,19 +86,23 @@ namespace Homework_4._5
             Console.WriteLine("Файл не пустой");
          }
 
-         // если файлы размером в 1 или несколько байт содержимого
+         Console.WriteLine();
+
+         // Если файлы размером в 1 или несколько байт содержимого
          if (info.Length < 6)
          {
             string content = File.ReadAllText(filePathFour);
             if (content.Length == 0)
             {
-               Console.WriteLine("Файл не пустой");
+               Console.WriteLine("Файл пустой");
             }
             else
             {
                Console.WriteLine("Файл не пустой");
             }
+
          }
+
 
 
          //if (fla == false)
