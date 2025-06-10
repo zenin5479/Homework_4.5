@@ -125,7 +125,7 @@ namespace Homework_4._5
             return true;
          }
 
-         // only if your use case can involve files with 1 or a few bytes of content.
+         // Если файлы размером в 1 или несколько байт содержимого
          if (info.Length < 6)
          {
             var content = File.ReadAllText(fileName);
