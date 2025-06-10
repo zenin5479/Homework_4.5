@@ -124,7 +124,7 @@ namespace Homework_4._5
          FileInfo info = new FileInfo(filePath);
          // Если файлы размером в 1 или несколько байт содержимого
          string content = File.ReadAllText(filePath);
-         if (info.Length == 0 && info.Length < 6 && content.Length == 0)
+         if (info.Length == 0 || info.Length < 6 && content.Length == 0)
          {
             Console.WriteLine("Файл пустой");
             return true;
