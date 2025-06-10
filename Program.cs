@@ -76,8 +76,6 @@ namespace Homework_4._5
          }
 
          // Скорректировать запись в файл и добавление строк
-
-
          FileInfo info = new FileInfo(filePathFour);
          if (info.Length == 0)
          {
@@ -98,24 +96,25 @@ namespace Homework_4._5
             }
             else
             {
-
+               Console.WriteLine("Файл не пустой");
             }
-
-
-            //if (fla == false)
-            //{
-            //   zamenanol(a, na); +
-            //   FILE* fp_finisha = fopen("finish.txt", "w");
-            //   if (fp_finisha == nullptr)
-            //   {
-            //      printf("Ошибка при открытии файла для записи\n");
-            //   }
-
-            //   vivod_vect(a, na, fp_finisha); +
-            //   fclose(fp_finisha);
-            //}
-
-            Console.ReadKey();
          }
+
+
+         //if (fla == false)
+         //{
+         //   zamenanol(a, na); +
+         //   FILE* fp_finisha = fopen("finish.txt", "w");
+         //   if (fp_finisha == nullptr)
+         //   {
+         //      printf("Ошибка при открытии файла для записи\n");
+         //   }
+
+         //   vivod_vect(a, na, fp_finisha); +
+         //   fclose(fp_finisha);
+         //}
+
+         Console.ReadKey();
       }
    }
+}
