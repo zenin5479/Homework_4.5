@@ -75,6 +75,10 @@ namespace Homework_4._5
             //ClassFor1DArray.FileWriteString(arrayTwo, filePathFour);
          }
 
+         bool fileEmpty = IsTextFileEmpty(filePathFour);
+
+
+
          // Скорректировать запись в файл и добавление строк
          FileInfo info = new FileInfo(filePathFour);
          if (info.Length == 0)
@@ -119,7 +123,7 @@ namespace Homework_4._5
 
       public static bool IsTextFileEmpty(string fileName)
       {
-         var info = new FileInfo(fileName);
+         FileInfo info = new FileInfo(fileName);
          if (info.Length == 0)
          {
             return true;
@@ -128,7 +132,7 @@ namespace Homework_4._5
          // Если файлы размером в 1 или несколько байт содержимого
          if (info.Length < 6)
          {
-            var content = File.ReadAllText(fileName);
+            string content = File.ReadAllText(fileName);
             return content.Length == 0;
          }
          return false;
