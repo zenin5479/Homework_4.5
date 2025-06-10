@@ -110,7 +110,6 @@ namespace Homework_4._5
          //   {
          //      printf("Ошибка при открытии файла для записи\n");
          //   }
-
          //   vivod_vect(a, na, fp_finisha); +
          //   fclose(fp_finisha);
          //}
