@@ -83,6 +83,10 @@ namespace Homework_4._5
          {
             Console.WriteLine("Файл не пустой");
          }
+         else
+         {
+            Console.WriteLine("Файл не пустой");
+         }
 
          // если файлы размером в 1 или несколько байт содержимого
          if (info.Length < 6)
