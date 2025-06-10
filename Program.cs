@@ -121,20 +121,49 @@ namespace Homework_4._5
          Console.ReadKey();
       }
 
-      public static bool IsTextFileEmpty(string fileName)
+      public static bool IsTextFileEmpty(string filePath)
       {
-         FileInfo info = new FileInfo(fileName);
+
+
+         // Скорректировать запись в файл и добавление строк
+         FileInfo info = new FileInfo(filePath);
          if (info.Length == 0)
          {
+            Console.WriteLine("Файл пустой");
             return true;
          }
 
          // Если файлы размером в 1 или несколько байт содержимого
          if (info.Length < 6)
          {
-            string content = File.ReadAllText(fileName);
-            return content.Length == 0;
+            string content = File.ReadAllText(filePath);
+            if (content.Length == 0)
+            {
+               Console.WriteLine("Файл пустой");
+               return true;
+            }
          }
+         Console.WriteLine("Файл не пустой");
+
+
+         Console.WriteLine();
+
+
+
+         //FileInfo info = new FileInfo(filePath);
+         //if (info.Length == 0)
+         //{
+         //   return true;
+         //}
+
+         //// Если файлы размером в 1 или несколько байт содержимого
+         //if (info.Length < 6)
+         //{
+         //   string content = File.ReadAllText(filePath);
+         //   return content.Length == 0;
+         //}
+         //return false;
+
          return false;
       }
    }
