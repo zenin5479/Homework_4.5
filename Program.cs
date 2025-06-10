@@ -146,10 +146,6 @@ namespace Homework_4._5
          Console.WriteLine("Файл не пустой");
 
 
-         Console.WriteLine();
-
-
-
          //FileInfo info = new FileInfo(filePath);
          //if (info.Length == 0)
          //{
