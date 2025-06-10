@@ -79,7 +79,7 @@ namespace Homework_4._5
          FileInfo info = new FileInfo(filePathFour);
          if (info.Length == 0)
          {
-            Console.WriteLine("Файл не пустой");
+            Console.WriteLine("Файл пустой");
          }
          else
          {
