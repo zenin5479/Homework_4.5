@@ -123,9 +123,6 @@ namespace Homework_4._5
 
       public static bool IsTextFileEmpty(string filePath)
       {
-
-
-         // Скорректировать запись в файл и добавление строк
          FileInfo info = new FileInfo(filePath);
          if (info.Length == 0)
          {
@@ -143,23 +140,8 @@ namespace Homework_4._5
                return true;
             }
          }
+
          Console.WriteLine("Файл не пустой");
-
-
-         //FileInfo info = new FileInfo(filePath);
-         //if (info.Length == 0)
-         //{
-         //   return true;
-         //}
-
-         //// Если файлы размером в 1 или несколько байт содержимого
-         //if (info.Length < 6)
-         //{
-         //   string content = File.ReadAllText(filePath);
-         //   return content.Length == 0;
-         //}
-         //return false;
-
          return false;
       }
    }
