@@ -67,7 +67,6 @@ namespace Homework_4._5
             ClassFor1DArray.FileWriteString(arrayOne, filePathFour);
          }
 
-
          bool flagArrayTwo = ClassFor1DArray.FindZero(arraySearchTwo, nameArrayTwo);
          if (flagArrayTwo == false)
          {
