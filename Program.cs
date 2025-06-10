@@ -123,6 +123,7 @@ namespace Homework_4._5
       {
          FileInfo info = new FileInfo(filePath);
 
+         string content = File.ReadAllText(filePath);
          if (info.Length == 0 && info.Length < 6)
          {
             Console.WriteLine("Файл пустой");
@@ -132,7 +133,7 @@ namespace Homework_4._5
          // Если файлы размером в 1 или несколько байт содержимого
          if (info.Length < 6)
          {
-            string content = File.ReadAllText(filePath);
+           
             if (content.Length == 0)
             {
                Console.WriteLine("Файл пустой");
