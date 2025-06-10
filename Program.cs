@@ -77,8 +77,6 @@ namespace Homework_4._5
 
          bool fileEmpty = IsTextFileEmpty(filePathFour);
 
-
-
          // Скорректировать запись в файл и добавление строк
          FileInfo info = new FileInfo(filePathFour);
          if (info.Length == 0)
