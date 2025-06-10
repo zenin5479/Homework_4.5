@@ -100,7 +100,6 @@ namespace Homework_4._5
             {
                Console.WriteLine("Файл не пустой");
             }
-
          }
 
 
