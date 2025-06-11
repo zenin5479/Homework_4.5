@@ -132,19 +132,6 @@ namespace Homework_4._5
 
          Console.WriteLine("Файл не пустой");
          return false;
-
-         // Если файлы размером в 1 или несколько байт содержимого
-         //if (info.Length < 6)
-         //{
-         //   if (content.Length == 0)
-         //   {
-         //      Console.WriteLine("Файл пустой");
-         //      return true;
-         //   }
-         //}
-
-         //Console.WriteLine("Файл не пустой");
-         //return false;
       }
    }
 }
