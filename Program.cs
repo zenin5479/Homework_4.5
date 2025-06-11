@@ -93,7 +93,7 @@ namespace Homework_4._5
          // Если файлы размером в 1 или несколько байт содержимого
          if (info.Length < 6)
          {
-            string content = File.ReadAllText(filePathFour);
+            string[] content = File.ReadAllLines(filePathFour);
             if (content.Length == 0)
             {
                Console.WriteLine("Файл пустой");
