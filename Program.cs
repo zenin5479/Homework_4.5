@@ -138,6 +138,7 @@ namespace Homework_4._5
       public static bool FileEmpty(string filePath)
       {
          FileInfo f = new FileInfo(filePath);
+         // Проверить значение
          return f.Length == 0 || f.Length < 10 && File.ReadAllBytes(filePath).Length == 0;
       }
    }
