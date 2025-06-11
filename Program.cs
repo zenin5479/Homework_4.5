@@ -139,7 +139,7 @@ namespace Homework_4._5
       {
          FileInfo f = new FileInfo(filePath);
          // Проверить значение
-         return f.Length == 0 || f.Length < 10 && File.ReadAllBytes(filePath).Length == 0;
+         return f.Length == 0 || f.Length < 10 && File.ReadAllLines(filePath).Length == 0;
       }
    }
 }
