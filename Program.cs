@@ -76,6 +76,7 @@ namespace Homework_4._5
          }
 
          bool fileEmpty = IsFileEmpty(filePathFour);
+         bool fileNull = FileEmpty(filePathFour);
 
          // Скорректировать запись в файл и добавление строк
          FileInfo info = new FileInfo(filePathFour);
@@ -132,6 +133,12 @@ namespace Homework_4._5
 
          Console.WriteLine("Файл не пустой");
          return false;
+      }
+
+      public static bool FileEmpty(string filePath)
+      {
+         FileInfo f = new FileInfo(filePath);
+         return f.Length == 0 || f.Length < 10 && File.ReadAllText(filePath).Length == 0;
       }
    }
 }
