@@ -75,6 +75,26 @@ namespace Homework_4._5
             //ClassFor1DArray.FileWriteString(arrayTwo, filePathFour);
          }
 
+         string s1 = "abcd";
+         string s2 = "";
+
+         Console.WriteLine("String s1 {0}.", Test(s1));
+         Console.WriteLine("String s2 {0}.", Test(s2));
+
+         string Test(string s)
+         {
+            if (string.IsNullOrEmpty(s))
+            {
+               return "является нулевым или пустым";
+            }
+            else
+            {
+               return string.Format("(\"{0}\") не является ни нулевым, ни пустым", s);
+            }
+         }
+
+
+
          bool fileEmpty = IsFileEmpty(filePathFour);
          bool fileNull = FileEmpty(filePathFour);
 
