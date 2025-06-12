@@ -54,9 +54,13 @@ namespace Homework_4._5
          else
          {
             Console.WriteLine("Файл существует. Очищаем");
-            FileStream fileStream = new FileStream(filePathFour, FileMode.Truncate);
-            fileStream.Close();
-            //File.Create(filePathFour).Close();
+            //FileStream fileStream = new FileStream(filePathFour, FileMode.Truncate);
+            //fileStream.Close();
+            File.Create(filePathFour).Close();
+            //File.WriteAllText(filePathFour, string.Empty);
+            //FileStream stream = new FileStream(filePathFour, FileMode.Open);
+            //stream.SetLength(0);
+            //stream.Close();
          }
 
          double[] arrayDoubleOne = ClassFor1DArray.VvodArray(filePathOne, nameArrayOne);
@@ -72,7 +76,7 @@ namespace Homework_4._5
          {
             double[] replacingArrayOne = ClassFor1DArray.ReplacingZero(arraySearchOne);
             string[] arrayOne = ClassFor1DArray.VivodStringArray(replacingArrayOne);
-            //ClassFor1DArray.FileWriteString(arrayOne, filePathFour);
+            ClassFor1DArray.FileWriteString(arrayOne, filePathFour);
          }
 
          bool flagArrayTwo = ClassFor1DArray.FindZero(arraySearchTwo, nameArrayTwo);
@@ -80,7 +84,7 @@ namespace Homework_4._5
          {
             double[] replacingArrayTwo = ClassFor1DArray.ReplacingZero(arraySearchTwo);
             string[] arrayTwo = ClassFor1DArray.VivodStringArray(replacingArrayTwo);
-            //ClassFor1DArray.FileWriteString(arrayTwo, filePathFour);
+            ClassFor1DArray.FileWriteString(arrayTwo, filePathFour);
          }
 
          string path = "test5.txt";
@@ -147,7 +151,6 @@ namespace Homework_4._5
 
          Console.ReadKey();
       }
-
       public static bool IsFileEmpty(string filePath)
       {
          FileInfo info = new FileInfo(filePath);
