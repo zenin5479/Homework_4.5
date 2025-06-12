@@ -87,26 +87,6 @@ namespace Homework_4._5
             ClassFor1DArray.FileWriteString(arrayTwo, filePathFour);
          }
 
-         string path = "test5.txt";
-         // Сначала создаём файл с содержимым
-         File.WriteAllText(path, "Это содержимое будет сокращено");
-         try
-         {
-            using (FileStream fs = new FileStream(path, FileMode.Truncate))
-            {
-               Console.WriteLine($"Файл усечен: {path}");
-               // Проверяем, что файл пуст
-               Console.WriteLine($"Длина файла после усечения: {fs.Length}");
-               // Записываем новое содержимое
-               byte[] data = System.Text.Encoding.UTF8.GetBytes("Новое содержимое после обрезки");
-               fs.Write(data, 0, data.Length);
-            }
-         }
-         catch (FileNotFoundException ex)
-         {
-            Console.WriteLine($"Error: {ex.Message}");
-         }
-
          bool fileEmpty = IsFileEmpty(filePathFour);
          bool fileNull = FileEmpty(filePathFour);
 
