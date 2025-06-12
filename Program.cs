@@ -59,8 +59,6 @@ namespace Homework_4._5
             File.Create(filePathFour).Close();
             // Вариант 2
             //File.WriteAllText(filePathFour, string.Empty);
-
-
             // Вариант 3
             //FileStream fileStream = new FileStream(filePathFour, FileMode.Truncate);
             //fileStream.Close();
