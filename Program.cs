@@ -63,7 +63,6 @@ namespace Homework_4._5
             // Вариант 3
             //File.WriteAllText(filePathFour, string.Empty);
 
-
             // Вариант 4
             //File.WriteAllBytes(filePathFour, new byte[0]);
             File.WriteAllBytes(filePathFour, Array.Empty<byte>());
