@@ -58,16 +58,28 @@ namespace Homework_4._5
             // Вариант 1
             //File.Create(filePathFour).Close();
             // Вариант 2
-            //File.WriteAllText(filePathFour, string.Empty);
+            //File.WriteAllLines(filePathFour, new string[0]);
+            File.WriteAllLines(filePathFour, Array.Empty<string>());
+
+
+
             // Вариант 3
+            //File.WriteAllText(filePathFour, string.Empty);
+
+
+            // Вариант 4
+            //File.WriteAllBytes(filePathFour, new byte[0]);
+            File.WriteAllBytes(filePathFour, Array.Empty<byte>());
+            // Вариант 5
             //FileStream fileStream = new FileStream(filePathFour, FileMode.Truncate);
             //fileStream.Close();
-            // Вариант 4
+            // Вариант 6
             //FileStream fileStream = new FileStream(filePathFour, FileMode.Open);
             //fileStream.SetLength(0);
             //fileStream.Close();
 
-            File.WriteAllBytes(filePathFour, new byte[0]);
+
+
          }
 
          double[] arrayDoubleOne = ClassFor1DArray.VvodArray(filePathOne, nameArrayOne);
