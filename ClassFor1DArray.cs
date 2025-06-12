@@ -192,6 +192,13 @@ namespace Homework_4._5
          return inputArray;
       }
 
+      public static void FileAppendString(string[] stringArray, string filePath)
+      {
+         // Запись массива строк в файл
+         Console.WriteLine("Запись массива строк в файл");
+         File.AppendAllLines(filePath, stringArray);
+      }
+
       public static int SearchingNullNumbers(double[] inputArray, string nameArray)
       {
          double numbercomparison = 0;
@@ -499,13 +506,7 @@ namespace Homework_4._5
          return stringArray;
       }
 
-      // Обновлен метод + 
-      public static void FileAppendString(string[] stringArray, string filePath)
-      {
-         // Запись массива строк в файл
-         Console.WriteLine("Запись массива строк в файл");
-         File.AppendAllLines(filePath, stringArray);
-      }
+
 
       public static void FileWriteString(string[] stringArray)
       {
