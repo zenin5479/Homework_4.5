@@ -77,7 +77,7 @@ namespace Homework_4._5
 
          string s1 = "abcd";
          string s2 = "";
-         s1 = string.Empty;
+         //s1 = string.Empty;
 
          Console.WriteLine("String s1 {0}.", Test(s1));
          Console.WriteLine("String s2 {0}.", Test(s2));
