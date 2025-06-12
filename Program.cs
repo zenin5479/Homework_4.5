@@ -99,7 +99,7 @@ namespace Homework_4._5
          }
 
          // Добавить для все методы для третьего массива
-         
+
          Console.ReadKey();
       }
    }
