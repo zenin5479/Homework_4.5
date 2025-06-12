@@ -60,9 +60,6 @@ namespace Homework_4._5
             // Вариант 2
             //File.WriteAllLines(filePathFour, new string[0]);
             File.WriteAllLines(filePathFour, Array.Empty<string>());
-
-
-
             // Вариант 3
             //File.WriteAllText(filePathFour, string.Empty);
 
