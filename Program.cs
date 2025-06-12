@@ -54,13 +54,14 @@ namespace Homework_4._5
          else
          {
             Console.WriteLine("Файл существует. Очищаем");
+            // Очищаем содержимое файла
             //FileStream fileStream = new FileStream(filePathFour, FileMode.Truncate);
             //fileStream.Close();
-            File.Create(filePathFour).Close();
-            //File.WriteAllText(filePathFour, string.Empty);
-            //FileStream stream = new FileStream(filePathFour, FileMode.Open);
-            //stream.SetLength(0);
-            //stream.Close();
+            //File.Create(filePathFour).Close();
+            File.WriteAllText(filePathFour, string.Empty);
+            FileStream fileStream = new FileStream(filePathFour, FileMode.Open);
+            fileStream.SetLength(0);
+            fileStream.Close();
          }
 
          double[] arrayDoubleOne = ClassFor1DArray.VvodArray(filePathOne, nameArrayOne);
