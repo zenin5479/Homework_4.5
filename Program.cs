@@ -49,6 +49,14 @@ namespace Homework_4._5
          if (!File.Exists(filePathFour))
          {
             Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
+            File.Create(filePathFour);
+         }
+         else
+         {
+            Console.WriteLine("Файл существует. Очищаем");
+            FileStream fileStream = new FileStream(filePathFour, FileMode.Truncate);
+            fileStream.Close();
+            //File.Create(filePathFour).Close();
          }
 
          double[] arrayDoubleOne = ClassFor1DArray.VvodArray(filePathOne, nameArrayOne);
