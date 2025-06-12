@@ -130,19 +130,5 @@ namespace Homework_4._5
 
          Console.ReadKey();
       }
-      public static bool IsFileEmpty(string filePath)
-      {
-         FileInfo info = new FileInfo(filePath);
-         // Если файлы размером в 1 или несколько байт содержимого
-         string[] content = File.ReadAllLines(filePath);
-         if (info.Length < 6 && content.Length == 0)
-         {
-            Console.WriteLine("Файл пустой");
-            return true;
-         }
-
-         Console.WriteLine("Файл не пустой");
-         return false;
-      }
    }
 }
