@@ -87,10 +87,8 @@ namespace Homework_4._5
             {
                return "является нулевым или пустым";
             }
-            else
-            {
-               return string.Format("(\"{0}\") не является ни нулевым, ни пустым", s);
-            }
+
+            return string.Format("(\"{0}\") не является ни нулевым, ни пустым", s);
          }
 
 
