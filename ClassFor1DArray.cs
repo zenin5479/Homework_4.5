@@ -500,7 +500,7 @@ namespace Homework_4._5
       }
 
       // Обновлен метод + 
-      public static void FileWriteString(string[] stringArray, string filePath)
+      public static void FileAppendString(string[] stringArray, string filePath)
       {
          // Запись массива строк в файл
          Console.WriteLine("Запись массива строк в файл");
