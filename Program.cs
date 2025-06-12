@@ -91,8 +91,6 @@ namespace Homework_4._5
             return string.Format("(\"{0}\") не является ни нулевым, ни пустым", s);
          }
 
-
-
          bool fileEmpty = IsFileEmpty(filePathFour);
          bool fileNull = FileEmpty(filePathFour);
 
