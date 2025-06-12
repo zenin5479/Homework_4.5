@@ -100,20 +100,6 @@ namespace Homework_4._5
 
          Console.WriteLine();
 
-         // Если файлы размером в 1 или несколько байт содержимого
-         if (info.Length < 6)
-         {
-            string[] content = File.ReadAllLines(filePathFour);
-            if (content.Length == 0)
-            {
-               Console.WriteLine("Файл пустой");
-            }
-            else
-            {
-               Console.WriteLine("Файл не пустой");
-            }
-         }
-
          //if (fla == false)
          //{
          //   zamenanol(a, na); +
