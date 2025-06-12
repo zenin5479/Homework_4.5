@@ -59,9 +59,9 @@ namespace Homework_4._5
             //fileStream.Close();
             //File.Create(filePathFour).Close();
             File.WriteAllText(filePathFour, string.Empty);
-            FileStream fileStream = new FileStream(filePathFour, FileMode.Open);
-            fileStream.SetLength(0);
-            fileStream.Close();
+            //FileStream fileStream = new FileStream(filePathFour, FileMode.Open);
+            //fileStream.SetLength(0);
+            //fileStream.Close();
          }
 
          double[] arrayDoubleOne = ClassFor1DArray.VvodArray(filePathOne, nameArrayOne);
