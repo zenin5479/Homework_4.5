@@ -56,10 +56,10 @@ namespace Homework_4._5
             Console.WriteLine("Файл существует. Очищаем");
             // Очищаем содержимое файла
             // Вариант 1
-            //File.Create(filePathFour).Close();
+            File.Create(filePathFour).Close();
             // Вариант 2
             //File.WriteAllLines(filePathFour, new string[0]);
-            File.WriteAllLines(filePathFour, Array.Empty<string>());
+            //File.WriteAllLines(filePathFour, Array.Empty<string>());
             // Вариант 3
             //File.WriteAllText(filePathFour, string.Empty);
             // Вариант 4
