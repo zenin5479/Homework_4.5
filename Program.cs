@@ -98,6 +98,14 @@ namespace Homework_4._5
             ClassFor1DArray.FileAppendString(arrayTwo, filePathFour);
          }
 
+         bool flagArrayThree = ClassFor1DArray.FindZero(arraySearchThree, nameArrayThree);
+         if (flagArrayThree == false)
+         {
+            double[] replacingArrayThree = ClassFor1DArray.ReplacingZero(arraySearchThree);
+            string[] arrayThree = ClassFor1DArray.VivodStringArray(replacingArrayThree);
+            ClassFor1DArray.FileAppendString(arrayThree, filePathFour);
+         }
+
          // Добавить для все методы для третьего массива
 
          Console.ReadKey();
