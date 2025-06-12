@@ -95,7 +95,6 @@ namespace Homework_4._5
             Console.WriteLine($"Error: {ex.Message}");
          }
 
-
          bool fileEmpty = IsFileEmpty(filePathFour);
          bool fileNull = FileEmpty(filePathFour);
 
