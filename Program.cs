@@ -56,14 +56,14 @@ namespace Homework_4._5
             Console.WriteLine("Файл существует. Очищаем");
             // Очищаем содержимое файла
             // Вариант 1
-             File.Create(filePathFour).Close();
-            
-            
+            File.Create(filePathFour).Close();
             // Вариант 2
-           //FileStream fileStream = new FileStream(filePathFour, FileMode.Truncate);
-            //fileStream.Close();
-            // Вариант 3
             //File.WriteAllText(filePathFour, string.Empty);
+
+
+            // Вариант 3
+            //FileStream fileStream = new FileStream(filePathFour, FileMode.Truncate);
+            //fileStream.Close();
             // Вариант 4
             //FileStream fileStream = new FileStream(filePathFour, FileMode.Open);
             //fileStream.SetLength(0);
