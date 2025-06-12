@@ -62,10 +62,9 @@ namespace Homework_4._5
             File.WriteAllLines(filePathFour, Array.Empty<string>());
             // Вариант 3
             //File.WriteAllText(filePathFour, string.Empty);
-
             // Вариант 4
             //File.WriteAllBytes(filePathFour, new byte[0]);
-            File.WriteAllBytes(filePathFour, Array.Empty<byte>());
+            //File.WriteAllBytes(filePathFour, Array.Empty<byte>());
             // Вариант 5
             //FileStream fileStream = new FileStream(filePathFour, FileMode.Truncate);
             //fileStream.Close();
