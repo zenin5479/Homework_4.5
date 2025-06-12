@@ -98,18 +98,8 @@ namespace Homework_4._5
             ClassFor1DArray.FileAppendString(arrayTwo, filePathFour);
          }
 
-         //if (fla == false)
-         //{
-         //   zamenanol(a, na); +
-         //   FILE* fp_finisha = fopen("finish.txt", "w");
-         //   if (fp_finisha == nullptr)
-         //   {
-         //      printf("Ошибка при открытии файла для записи\n");
-         //   }
-         //   vivod_vect(a, na, fp_finisha); +
-         //   fclose(fp_finisha);
-         //}
-
+         // Добавить для все методы для третьего массива
+         
          Console.ReadKey();
       }
    }
