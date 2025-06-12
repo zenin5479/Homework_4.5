@@ -56,7 +56,7 @@ namespace Homework_4._5
             Console.WriteLine("Файл существует. Очищаем");
             // Очищаем содержимое файла
             // Вариант 1
-            File.Create(filePathFour).Close();
+            //File.Create(filePathFour).Close();
             // Вариант 2
             //File.WriteAllText(filePathFour, string.Empty);
             // Вариант 3
@@ -66,6 +66,8 @@ namespace Homework_4._5
             //FileStream fileStream = new FileStream(filePathFour, FileMode.Open);
             //fileStream.SetLength(0);
             //fileStream.Close();
+
+            File.WriteAllBytes(filePathFour, new byte[0]);
          }
 
          double[] arrayDoubleOne = ClassFor1DArray.VvodArray(filePathOne, nameArrayOne);
