@@ -27,8 +27,8 @@ namespace Homework_4._5
          int elementsTwo = ClassFor1DArray.NumberArrayElements(nameTwo);
          int elementsThree = ClassFor1DArray.NumberArrayElements(nameThree);
 
-         string filePathOne = Path.GetFullPath("a.txt");
-         if (!File.Exists(filePathOne))
+         string pathOne = Path.GetFullPath("a.txt");
+         if (!File.Exists(pathOne))
          {
             Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
          }
@@ -74,7 +74,7 @@ namespace Homework_4._5
             //fileStream.Close();
          }
 
-         double[] arrayDoubleOne = ClassFor1DArray.VvodArray(filePathOne, nameOne);
+         double[] arrayDoubleOne = ClassFor1DArray.VvodArray(pathOne, nameOne);
          double[] arrayDoubleTwo = ClassFor1DArray.VvodArray(filePathTwo, nameTwo);
          double[] arrayDoubleThree = ClassFor1DArray.VvodArray(filePathThree, nameThree);
 
