@@ -84,7 +84,7 @@ namespace Homework_4._5
          double[] searchThree = VariousMethods.InputArray(sourceThree, elementsThree, nameThree);
 
          bool flagOne = VariousMethods.FindZero(searchOne, nameOne);
-         if (flagOne == false)                     
+         if (flagOne == false)
          {
             double[] replacingOne = VariousMethods.ReplacingZero(searchOne);
             string[] arrayOne = VariousMethods.VivodStringArray(replacingOne);
