@@ -33,50 +33,50 @@ namespace Homework_4._5
             Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
          }
 
-         string filePathTwo = Path.GetFullPath("b.txt");
-         if (!File.Exists(filePathTwo))
+         string pathTwo = Path.GetFullPath("b.txt");
+         if (!File.Exists(pathTwo))
          {
             Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
          }
 
-         string filePathThree = Path.GetFullPath("c.txt");
-         if (!File.Exists(filePathThree))
+         string pathThree = Path.GetFullPath("c.txt");
+         if (!File.Exists(pathThree))
          {
             Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
          }
 
-         string filePathFour = Path.GetFullPath("finish.txt");
-         if (!File.Exists(filePathFour))
+         string pathFour = Path.GetFullPath("finish.txt");
+         if (!File.Exists(pathFour))
          {
             Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
-            File.Create(filePathFour);
+            File.Create(pathFour);
          }
          else
          {
             Console.WriteLine("Файл существует. Очищаем");
             // Очищаем содержимое файла
             // Вариант 1
-            File.Create(filePathFour).Close();
+            File.Create(pathFour).Close();
             // Вариант 2
-            //File.WriteAllLines(filePathFour, new string[0]);
-            //File.WriteAllLines(filePathFour, Array.Empty<string>());
+            //File.WriteAllLines(pathFour, new string[0]);
+            //File.WriteAllLines(pathFour, Array.Empty<string>());
             // Вариант 3
-            //File.WriteAllText(filePathFour, string.Empty);
+            //File.WriteAllText(pathFour, string.Empty);
             // Вариант 4
-            //File.WriteAllBytes(filePathFour, new byte[0]);
-            //File.WriteAllBytes(filePathFour, Array.Empty<byte>());
+            //File.WriteAllBytes(pathFour, new byte[0]);
+            //File.WriteAllBytes(pathFour, Array.Empty<byte>());
             // Вариант 5
-            //FileStream fileStream = new FileStream(filePathFour, FileMode.Truncate);
+            //FileStream fileStream = new FileStream(pathFour, FileMode.Truncate);
             //fileStream.Close();
             // Вариант 6
-            //FileStream fileStream = new FileStream(filePathFour, FileMode.Open);
+            //FileStream fileStream = new FileStream(pathFour, FileMode.Open);
             //fileStream.SetLength(0);
             //fileStream.Close();
          }
 
          double[] arrayDoubleOne = ClassFor1DArray.VvodArray(pathOne, nameOne);
-         double[] arrayDoubleTwo = ClassFor1DArray.VvodArray(filePathTwo, nameTwo);
-         double[] arrayDoubleThree = ClassFor1DArray.VvodArray(filePathThree, nameThree);
+         double[] arrayDoubleTwo = ClassFor1DArray.VvodArray(pathTwo, nameTwo);
+         double[] arrayDoubleThree = ClassFor1DArray.VvodArray(pathThree, nameThree);
 
          double[] arraySearchOne = ClassFor1DArray.InputArray(arrayDoubleOne, elementsOne, nameOne);
          double[] arraySearchTwo = ClassFor1DArray.InputArray(arrayDoubleTwo, elementsTwo, nameTwo);
@@ -87,7 +87,7 @@ namespace Homework_4._5
          {
             double[] replacingArrayOne = ClassFor1DArray.ReplacingZero(arraySearchOne);
             string[] arrayOne = ClassFor1DArray.VivodStringArray(replacingArrayOne);
-            ClassFor1DArray.FileAppendString(arrayOne, filePathFour);
+            ClassFor1DArray.FileAppendString(arrayOne, pathFour);
          }
 
          bool flagArrayTwo = ClassFor1DArray.FindZero(arraySearchTwo, nameTwo);
@@ -95,7 +95,7 @@ namespace Homework_4._5
          {
             double[] replacingArrayTwo = ClassFor1DArray.ReplacingZero(arraySearchTwo);
             string[] arrayTwo = ClassFor1DArray.VivodStringArray(replacingArrayTwo);
-            ClassFor1DArray.FileAppendString(arrayTwo, filePathFour);
+            ClassFor1DArray.FileAppendString(arrayTwo, pathFour);
          }
 
          bool flagArrayThree = ClassFor1DArray.FindZero(arraySearchThree, nameThree);
@@ -103,7 +103,7 @@ namespace Homework_4._5
          {
             double[] replacingArrayThree = ClassFor1DArray.ReplacingZero(arraySearchThree);
             string[] arrayThree = ClassFor1DArray.VivodStringArray(replacingArrayThree);
-            ClassFor1DArray.FileAppendString(arrayThree, filePathFour);
+            ClassFor1DArray.FileAppendString(arrayThree, pathFour);
          }
 
          Console.ReadKey();
