@@ -505,9 +505,7 @@ namespace Homework_4._5
          string[] stringArray = { stringModified.ToString() };
          return stringArray;
       }
-
-
-
+      
       public static void FileWriteString(string[] stringArray)
       {
          // Запись массива строк в файл
