@@ -239,7 +239,7 @@ namespace Homework_4._5
          return count;
       }
 
-      public static void Comparison(int a, int b, int c)
+      public static void ComparisonNull(int a, int b, int c)
       {
          string[] name = { "A", "B", "C" };
          int[] arr = { a, b, c };
@@ -273,8 +273,42 @@ namespace Homework_4._5
       }
 
       // Не работает при a=b и c=2 надо находить минимум из 3 значений без условий
-      public static void ComparisonValue(int a, int b, int c)
+      public static void ComparisonNegative(int a, int b, int c)
       {
+         string[] name = { "A", "B", "C" };
+         int[] arr = { a, b, c };
+         // Поиск минимального элемента строки (без флагов bool)
+         int min = arr[0];
+         int counter = 0;
+         while (counter < arr.Length)
+         {
+            // Cчитаем, что минимум - это первый элемент строки
+            if (arr[counter] < min)
+            {
+               min = arr[counter];
+            }
+
+            counter++;
+         }
+         Console.WriteLine("Минимум  равен: {0}", min);
+
+         // Проверка массивов на минимум элементов
+         counter = 0;
+         while (counter < arr.Length)
+         {
+            // Cчитаем, что минимум - это первый элемент строки
+            if (arr[counter] == min)
+            {
+               Console.WriteLine("В массиве {0} минимальное количество элементов равных нулю: {1}", name[counter], min);
+            }
+
+            counter++;
+         }
+
+         if (a == b && a == c)
+         {
+         }
+         
          if (a == b && a == c)
          {
             Console.WriteLine("Отрицательных элементов в массивах A, В, С равное количество");
