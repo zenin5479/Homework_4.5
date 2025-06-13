@@ -74,13 +74,13 @@ namespace Homework_4._5
             //fileStream.Close();
          }
 
-         double[] arraySourceOne = ClassFor1DArray.VvodArray(pathOne, nameOne);
-         double[] arraySourceTwo = ClassFor1DArray.VvodArray(pathTwo, nameTwo);
-         double[] arraySourceThree = ClassFor1DArray.VvodArray(pathThree, nameThree);
+         double[] sourceOne = ClassFor1DArray.VvodArray(pathOne, nameOne);
+         double[] sourceTwo = ClassFor1DArray.VvodArray(pathTwo, nameTwo);
+         double[] sourceThree = ClassFor1DArray.VvodArray(pathThree, nameThree);
 
-         double[] searchOne = ClassFor1DArray.InputArray(arraySourceOne, elementsOne, nameOne);
-         double[] searchTwo = ClassFor1DArray.InputArray(arraySourceTwo, elementsTwo, nameTwo);
-         double[] searchThree = ClassFor1DArray.InputArray(arraySourceThree, elementsThree, nameThree);
+         double[] searchOne = ClassFor1DArray.InputArray(sourceOne, elementsOne, nameOne);
+         double[] searchTwo = ClassFor1DArray.InputArray(sourceTwo, elementsTwo, nameTwo);
+         double[] searchThree = ClassFor1DArray.InputArray(sourceThree, elementsThree, nameThree);
 
          bool flagOne = ClassFor1DArray.FindZero(searchOne, nameOne);
          if (flagOne == false)
