@@ -74,35 +74,35 @@ namespace Homework_4._5
             //fileStream.Close();
          }
 
-         double[] arrayDoubleOne = ClassFor1DArray.VvodArray(pathOne, nameOne);
-         double[] arrayDoubleTwo = ClassFor1DArray.VvodArray(pathTwo, nameTwo);
-         double[] arrayDoubleThree = ClassFor1DArray.VvodArray(pathThree, nameThree);
+         double[] arraySourceOne = ClassFor1DArray.VvodArray(pathOne, nameOne);
+         double[] arraySourceTwo = ClassFor1DArray.VvodArray(pathTwo, nameTwo);
+         double[] arraySourceThree = ClassFor1DArray.VvodArray(pathThree, nameThree);
 
-         double[] arraySearchOne = ClassFor1DArray.InputArray(arrayDoubleOne, elementsOne, nameOne);
-         double[] arraySearchTwo = ClassFor1DArray.InputArray(arrayDoubleTwo, elementsTwo, nameTwo);
-         double[] arraySearchThree = ClassFor1DArray.InputArray(arrayDoubleThree, elementsThree, nameThree);
+         double[] searchOne = ClassFor1DArray.InputArray(arraySourceOne, elementsOne, nameOne);
+         double[] searchTwo = ClassFor1DArray.InputArray(arraySourceTwo, elementsTwo, nameTwo);
+         double[] searchThree = ClassFor1DArray.InputArray(arraySourceThree, elementsThree, nameThree);
 
-         bool flagArrayOne = ClassFor1DArray.FindZero(arraySearchOne, nameOne);
-         if (flagArrayOne == false)
+         bool flagOne = ClassFor1DArray.FindZero(searchOne, nameOne);
+         if (flagOne == false)
          {
-            double[] replacingArrayOne = ClassFor1DArray.ReplacingZero(arraySearchOne);
-            string[] arrayOne = ClassFor1DArray.VivodStringArray(replacingArrayOne);
+            double[] replacingOne = ClassFor1DArray.ReplacingZero(searchOne);
+            string[] arrayOne = ClassFor1DArray.VivodStringArray(replacingOne);
             ClassFor1DArray.FileAppendString(arrayOne, pathFour);
          }
 
-         bool flagArrayTwo = ClassFor1DArray.FindZero(arraySearchTwo, nameTwo);
-         if (flagArrayTwo == false)
+         bool flagTwo = ClassFor1DArray.FindZero(searchTwo, nameTwo);
+         if (flagTwo == false)
          {
-            double[] replacingArrayTwo = ClassFor1DArray.ReplacingZero(arraySearchTwo);
-            string[] arrayTwo = ClassFor1DArray.VivodStringArray(replacingArrayTwo);
+            double[] replacingTwo = ClassFor1DArray.ReplacingZero(searchTwo);
+            string[] arrayTwo = ClassFor1DArray.VivodStringArray(replacingTwo);
             ClassFor1DArray.FileAppendString(arrayTwo, pathFour);
          }
 
-         bool flagArrayThree = ClassFor1DArray.FindZero(arraySearchThree, nameThree);
-         if (flagArrayThree == false)
+         bool flagThree = ClassFor1DArray.FindZero(searchThree, nameThree);
+         if (flagThree == false)
          {
-            double[] replacingArrayThree = ClassFor1DArray.ReplacingZero(arraySearchThree);
-            string[] arrayThree = ClassFor1DArray.VivodStringArray(replacingArrayThree);
+            double[] replacingThree = ClassFor1DArray.ReplacingZero(searchThree);
+            string[] arrayThree = ClassFor1DArray.VivodStringArray(replacingThree);
             ClassFor1DArray.FileAppendString(arrayThree, pathFour);
          }
 
