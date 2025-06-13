@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibraryFor1DArray;
+using System;
 using System.IO;
 
 // Дано 3 одномерных массива A, B и C разного размера
@@ -23,9 +24,9 @@ namespace Homework_4._5
          string nameTwo = "B";
          string nameThree = "C";
 
-         int elementsOne = ClassFor1DArray.NumberArrayElements(nameOne);
-         int elementsTwo = ClassFor1DArray.NumberArrayElements(nameTwo);
-         int elementsThree = ClassFor1DArray.NumberArrayElements(nameThree);
+         int elementsOne = VariousMethods.NumberArrayElements(nameOne);
+         int elementsTwo = VariousMethods.NumberArrayElements(nameTwo);
+         int elementsThree = VariousMethods.NumberArrayElements(nameThree);
 
          string pathOne = Path.GetFullPath("a.txt");
          if (!File.Exists(pathOne))
@@ -74,36 +75,36 @@ namespace Homework_4._5
             //fileStream.Close();
          }
 
-         double[] sourceOne = ClassFor1DArray.VvodArray(pathOne, nameOne);
-         double[] sourceTwo = ClassFor1DArray.VvodArray(pathTwo, nameTwo);
-         double[] sourceThree = ClassFor1DArray.VvodArray(pathThree, nameThree);
+         double[] sourceOne = VariousMethods.VvodArray(pathOne, nameOne);
+         double[] sourceTwo = VariousMethods.VvodArray(pathTwo, nameTwo);
+         double[] sourceThree = VariousMethods.VvodArray(pathThree, nameThree);
 
-         double[] searchOne = ClassFor1DArray.InputArray(sourceOne, elementsOne, nameOne);
-         double[] searchTwo = ClassFor1DArray.InputArray(sourceTwo, elementsTwo, nameTwo);
-         double[] searchThree = ClassFor1DArray.InputArray(sourceThree, elementsThree, nameThree);
+         double[] searchOne = VariousMethods.InputArray(sourceOne, elementsOne, nameOne);
+         double[] searchTwo = VariousMethods.InputArray(sourceTwo, elementsTwo, nameTwo);
+         double[] searchThree = VariousMethods.InputArray(sourceThree, elementsThree, nameThree);
 
-         bool flagOne = ClassFor1DArray.FindZero(searchOne, nameOne);
-         if (flagOne == false)
+         bool flagOne = VariousMethods.FindZero(searchOne, nameOne);
+         if (flagOne == false)                     
          {
-            double[] replacingOne = ClassFor1DArray.ReplacingZero(searchOne);
-            string[] arrayOne = ClassFor1DArray.VivodStringArray(replacingOne);
-            ClassFor1DArray.FileAppendString(arrayOne, pathFour);
+            double[] replacingOne = VariousMethods.ReplacingZero(searchOne);
+            string[] arrayOne = VariousMethods.VivodStringArray(replacingOne);
+            VariousMethods.FileAppendString(arrayOne, pathFour);
          }
 
-         bool flagTwo = ClassFor1DArray.FindZero(searchTwo, nameTwo);
+         bool flagTwo = VariousMethods.FindZero(searchTwo, nameTwo);
          if (flagTwo == false)
          {
-            double[] replacingTwo = ClassFor1DArray.ReplacingZero(searchTwo);
-            string[] arrayTwo = ClassFor1DArray.VivodStringArray(replacingTwo);
-            ClassFor1DArray.FileAppendString(arrayTwo, pathFour);
+            double[] replacingTwo = VariousMethods.ReplacingZero(searchTwo);
+            string[] arrayTwo = VariousMethods.VivodStringArray(replacingTwo);
+            VariousMethods.FileAppendString(arrayTwo, pathFour);
          }
 
-         bool flagThree = ClassFor1DArray.FindZero(searchThree, nameThree);
+         bool flagThree = VariousMethods.FindZero(searchThree, nameThree);
          if (flagThree == false)
          {
-            double[] replacingThree = ClassFor1DArray.ReplacingZero(searchThree);
-            string[] arrayThree = ClassFor1DArray.VivodStringArray(replacingThree);
-            ClassFor1DArray.FileAppendString(arrayThree, pathFour);
+            double[] replacingThree = VariousMethods.ReplacingZero(searchThree);
+            string[] arrayThree = VariousMethods.VivodStringArray(replacingThree);
+            VariousMethods.FileAppendString(arrayThree, pathFour);
          }
 
          Console.ReadKey();

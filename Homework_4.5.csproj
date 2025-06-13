@@ -6,4 +6,10 @@
     <RootNamespace>Homework_4._5</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="LibraryFor1DArray">
+      <HintPath>bin\Debug\netcoreapp3.1\LibraryFor1DArray.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
