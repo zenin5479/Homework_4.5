@@ -199,7 +199,8 @@ namespace Homework_4._5
          File.AppendAllLines(filePath, stringArray);
       }
 
-      public static int SearchingNullNumbers(double[] inputArray, string nameArray)
+      // Обновлен метод +
+      public static int SearchingNull(double[] inputArray, string nameArray)
       {
          double numbercomparison = 0;
          int count = 0;
@@ -272,7 +273,7 @@ namespace Homework_4._5
          }
       }
 
-      // Не работает при a=b и c=2 надо находить минимум из 3 значений без условий
+      // Обновлен метод + 
       public static void ComparisonNegative(int a, int b, int c)
       {
          string[] name = { "A", "B", "C" };
