@@ -299,7 +299,7 @@ namespace Homework_4._5
             // Cчитаем, что минимум - это первый элемент строки
             if (arr[counter] == min)
             {
-               Console.WriteLine("В массиве {0} наименьшее количество отрицательных элементов: ", name[counter]);
+               Console.WriteLine("В массиве {0} наименьшее количество отрицательных элементов", name[counter]);
             }
 
             counter++;
