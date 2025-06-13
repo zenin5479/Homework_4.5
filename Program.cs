@@ -86,6 +86,9 @@ namespace Homework_4._5
          int two = ClassFor1DArray.SearchingNegative(arrayDoubleTwo, nameArrayTwo);
          int three = ClassFor1DArray.SearchingNegative(arrayDoubleThree, nameArrayThree);
 
+         ClassFor1DArray.ComparisonNegative(one, two, three);
+        
+
 
          //bool flagArrayOne = ClassFor1DArray.FindZero(arraySearchOne, nameArrayOne);
          //if (flagArrayOne == false)
