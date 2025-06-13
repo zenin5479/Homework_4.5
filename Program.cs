@@ -106,8 +106,6 @@ namespace Homework_4._5
             ClassFor1DArray.FileAppendString(arrayThree, filePathFour);
          }
 
-         // Добавить для все методы для третьего массива
-
          Console.ReadKey();
       }
    }
