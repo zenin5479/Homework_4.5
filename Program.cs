@@ -19,13 +19,13 @@ namespace Homework_4._5
          // Переводит (,) в (.)
          //System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
 
-         string nameArrayOne = "A";
-         string nameArrayTwo = "B";
-         string nameArrayThree = "C";
+         string nameOne = "A";
+         string nameTwo = "B";
+         string nameThree = "C";
 
-         int elementsOne = ClassFor1DArray.NumberArrayElements(nameArrayOne);
-         int elementsTwo = ClassFor1DArray.NumberArrayElements(nameArrayTwo);
-         int elementsThree = ClassFor1DArray.NumberArrayElements(nameArrayThree);
+         int elementsOne = ClassFor1DArray.NumberArrayElements(nameOne);
+         int elementsTwo = ClassFor1DArray.NumberArrayElements(nameTwo);
+         int elementsThree = ClassFor1DArray.NumberArrayElements(nameThree);
 
          string filePathOne = Path.GetFullPath("a.txt");
          if (!File.Exists(filePathOne))
@@ -74,45 +74,37 @@ namespace Homework_4._5
             //fileStream.Close();
          }
 
-         double[] arrayDoubleOne = ClassFor1DArray.VvodArray(filePathOne, nameArrayOne);
-         double[] arrayDoubleTwo = ClassFor1DArray.VvodArray(filePathTwo, nameArrayTwo);
-         double[] arrayDoubleThree = ClassFor1DArray.VvodArray(filePathThree, nameArrayThree);
+         double[] arrayDoubleOne = ClassFor1DArray.VvodArray(filePathOne, nameOne);
+         double[] arrayDoubleTwo = ClassFor1DArray.VvodArray(filePathTwo, nameTwo);
+         double[] arrayDoubleThree = ClassFor1DArray.VvodArray(filePathThree, nameThree);
 
-         double[] arraySearchOne = ClassFor1DArray.InputArray(arrayDoubleOne, elementsOne, nameArrayOne);
-         double[] arraySearchTwo = ClassFor1DArray.InputArray(arrayDoubleTwo, elementsTwo, nameArrayTwo);
-         double[] arraySearchThree = ClassFor1DArray.InputArray(arrayDoubleThree, elementsThree, nameArrayThree);
+         double[] arraySearchOne = ClassFor1DArray.InputArray(arrayDoubleOne, elementsOne, nameOne);
+         double[] arraySearchTwo = ClassFor1DArray.InputArray(arrayDoubleTwo, elementsTwo, nameTwo);
+         double[] arraySearchThree = ClassFor1DArray.InputArray(arrayDoubleThree, elementsThree, nameThree);
 
-         int one = ClassFor1DArray.SearchingNegative(arraySearchOne, nameArrayOne);
-         int two = ClassFor1DArray.SearchingNegative(arraySearchTwo, nameArrayTwo);
-         int three = ClassFor1DArray.SearchingNegative(arraySearchThree, nameArrayThree);
+         bool flagArrayOne = ClassFor1DArray.FindZero(arraySearchOne, nameOne);
+         if (flagArrayOne == false)
+         {
+            double[] replacingArrayOne = ClassFor1DArray.ReplacingZero(arraySearchOne);
+            string[] arrayOne = ClassFor1DArray.VivodStringArray(replacingArrayOne);
+            ClassFor1DArray.FileAppendString(arrayOne, filePathFour);
+         }
 
-         ClassFor1DArray.ComparisonNegative(one, two, three);
-        
+         bool flagArrayTwo = ClassFor1DArray.FindZero(arraySearchTwo, nameTwo);
+         if (flagArrayTwo == false)
+         {
+            double[] replacingArrayTwo = ClassFor1DArray.ReplacingZero(arraySearchTwo);
+            string[] arrayTwo = ClassFor1DArray.VivodStringArray(replacingArrayTwo);
+            ClassFor1DArray.FileAppendString(arrayTwo, filePathFour);
+         }
 
-
-         //bool flagArrayOne = ClassFor1DArray.FindZero(arraySearchOne, nameArrayOne);
-         //if (flagArrayOne == false)
-         //{
-         //   double[] replacingArrayOne = ClassFor1DArray.ReplacingZero(arraySearchOne);
-         //   string[] arrayOne = ClassFor1DArray.VivodStringArray(replacingArrayOne);
-         //   ClassFor1DArray.FileAppendString(arrayOne, filePathFour);
-         //}
-
-         //bool flagArrayTwo = ClassFor1DArray.FindZero(arraySearchTwo, nameArrayTwo);
-         //if (flagArrayTwo == false)
-         //{
-         //   double[] replacingArrayTwo = ClassFor1DArray.ReplacingZero(arraySearchTwo);
-         //   string[] arrayTwo = ClassFor1DArray.VivodStringArray(replacingArrayTwo);
-         //   ClassFor1DArray.FileAppendString(arrayTwo, filePathFour);
-         //}
-
-         //bool flagArrayThree = ClassFor1DArray.FindZero(arraySearchThree, nameArrayThree);
-         //if (flagArrayThree == false)
-         //{
-         //   double[] replacingArrayThree = ClassFor1DArray.ReplacingZero(arraySearchThree);
-         //   string[] arrayThree = ClassFor1DArray.VivodStringArray(replacingArrayThree);
-         //   ClassFor1DArray.FileAppendString(arrayThree, filePathFour);
-         //}
+         bool flagArrayThree = ClassFor1DArray.FindZero(arraySearchThree, nameThree);
+         if (flagArrayThree == false)
+         {
+            double[] replacingArrayThree = ClassFor1DArray.ReplacingZero(arraySearchThree);
+            string[] arrayThree = ClassFor1DArray.VivodStringArray(replacingArrayThree);
+            ClassFor1DArray.FileAppendString(arrayThree, filePathFour);
+         }
 
          Console.ReadKey();
       }
