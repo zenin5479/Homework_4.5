@@ -327,7 +327,7 @@ namespace Homework_4._5
          }
       }
 
-      public static int SearchingNegativeNumbers(double[] inputArray, string nameArray)
+      public static int SearchingNegative(double[] inputArray, string nameArray)
       {
          int count = 0;
          int i = 0;
