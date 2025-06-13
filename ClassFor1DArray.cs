@@ -290,7 +290,7 @@ namespace Homework_4._5
 
             counter++;
          }
-         Console.WriteLine("Минимум  равен: {0}", min);
+         Console.WriteLine("Минимальное количество отрицательных элементов в массивах {0}, {1}, {2} равено: {3}", name[0], name[1], name[2], min);
 
          // Проверка массивов на минимум элементов
          counter = 0;
@@ -305,10 +305,6 @@ namespace Homework_4._5
             counter++;
          }
 
-         if (a == b && a == c)
-         {
-         }
-         
          if (a == b && a == c)
          {
             Console.WriteLine("Отрицательных элементов в массивах A, В, С равное количество");
@@ -539,7 +535,7 @@ namespace Homework_4._5
          string[] stringArray = { stringModified.ToString() };
          return stringArray;
       }
-      
+
       public static void FileWriteString(string[] stringArray)
       {
          // Запись массива строк в файл
