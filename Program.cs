@@ -1,5 +1,4 @@
-﻿using LibraryFor1DArray;
-using System;
+﻿using System;
 using System.IO;
 
 // Дано 3 одномерных массива A, B и C разного размера
@@ -15,7 +14,7 @@ namespace Homework_4._5
 {
    internal class Program
    {
-      static void Main(string[] args)
+      static void Main()
       {
          // Переводит (,) в (.)
          //System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
@@ -24,9 +23,9 @@ namespace Homework_4._5
          string nameTwo = "B";
          string nameThree = "C";
 
-         int elementsOne = VariousMethods.NumberArrayElements(nameOne);
-         int elementsTwo = VariousMethods.NumberArrayElements(nameTwo);
-         int elementsThree = VariousMethods.NumberArrayElements(nameThree);
+         int elementsOne = MethodsForArray.NumberArrayElements(nameOne);
+         int elementsTwo = MethodsForArray.NumberArrayElements(nameTwo);
+         int elementsThree = MethodsForArray.NumberArrayElements(nameThree);
 
          string pathOne = Path.GetFullPath("a.txt");
          if (!File.Exists(pathOne))
@@ -75,36 +74,36 @@ namespace Homework_4._5
             //fileStream.Close();
          }
 
-         double[] sourceOne = VariousMethods.VvodArray(pathOne, nameOne);
-         double[] sourceTwo = VariousMethods.VvodArray(pathTwo, nameTwo);
-         double[] sourceThree = VariousMethods.VvodArray(pathThree, nameThree);
+         double[] sourceOne = MethodsForArray.VvodArray(pathOne, nameOne);
+         double[] sourceTwo = MethodsForArray.VvodArray(pathTwo, nameTwo);
+         double[] sourceThree = MethodsForArray.VvodArray(pathThree, nameThree);
 
-         double[] searchOne = VariousMethods.InputArray(sourceOne, elementsOne, nameOne);
-         double[] searchTwo = VariousMethods.InputArray(sourceTwo, elementsTwo, nameTwo);
-         double[] searchThree = VariousMethods.InputArray(sourceThree, elementsThree, nameThree);
+         double[] searchOne = MethodsForArray.InputArray(sourceOne, elementsOne, nameOne);
+         double[] searchTwo = MethodsForArray.InputArray(sourceTwo, elementsTwo, nameTwo);
+         double[] searchThree = MethodsForArray.InputArray(sourceThree, elementsThree, nameThree);
 
-         bool flagOne = VariousMethods.FindZero(searchOne, nameOne);
+         bool flagOne = MethodsForArray.FindZero(searchOne, nameOne);
          if (flagOne == false)
          {
-            double[] replacingOne = VariousMethods.ReplacingZero(searchOne);
-            string[] arrayOne = VariousMethods.VivodStringArray(replacingOne);
-            VariousMethods.FileAppendString(arrayOne, pathFour);
+            double[] replacingOne = MethodsForArray.ReplacingZero(searchOne);
+            string[] arrayOne = MethodsForArray.VivodStringArray(replacingOne);
+            MethodsForArray.FileAppendString(arrayOne, pathFour);
          }
 
-         bool flagTwo = VariousMethods.FindZero(searchTwo, nameTwo);
+         bool flagTwo = MethodsForArray.FindZero(searchTwo, nameTwo);
          if (flagTwo == false)
          {
-            double[] replacingTwo = VariousMethods.ReplacingZero(searchTwo);
-            string[] arrayTwo = VariousMethods.VivodStringArray(replacingTwo);
-            VariousMethods.FileAppendString(arrayTwo, pathFour);
+            double[] replacingTwo = MethodsForArray.ReplacingZero(searchTwo);
+            string[] arrayTwo = MethodsForArray.VivodStringArray(replacingTwo);
+            MethodsForArray.FileAppendString(arrayTwo, pathFour);
          }
 
-         bool flagThree = VariousMethods.FindZero(searchThree, nameThree);
+         bool flagThree = MethodsForArray.FindZero(searchThree, nameThree);
          if (flagThree == false)
          {
-            double[] replacingThree = VariousMethods.ReplacingZero(searchThree);
-            string[] arrayThree = VariousMethods.VivodStringArray(replacingThree);
-            VariousMethods.FileAppendString(arrayThree, pathFour);
+            double[] replacingThree = MethodsForArray.ReplacingZero(searchThree);
+            string[] arrayThree = MethodsForArray.VivodStringArray(replacingThree);
+            MethodsForArray.FileAppendString(arrayThree, pathFour);
          }
 
          Console.ReadKey();
