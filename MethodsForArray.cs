@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Homework_4._5
 {
-   internal class ClassFor1DArray
+   internal class MethodsForArray
    {
       public static int NumberArrayElements(string nameArray)
       {
@@ -199,7 +199,6 @@ namespace Homework_4._5
          File.AppendAllLines(filePath, stringArray);
       }
 
-      // Обновлен метод +
       public static int SearchingNull(double[] inputArray, string nameArray)
       {
          double numbercomparison = 0;
@@ -273,7 +272,6 @@ namespace Homework_4._5
          }
       }
 
-      // Обновлен метод + 
       public static void ComparisonNegative(int a, int b, int c)
       {
          string[] name = { "A", "B", "C" };
@@ -493,7 +491,6 @@ namespace Homework_4._5
          return arrayMax;
       }
 
-      // Обновлен метод + 
       public static string[] VivodStringArray(double[] inputArray)
       {
          // Объединение одномерного массива максимальных значений строк double[]
@@ -528,7 +525,6 @@ namespace Homework_4._5
          File.WriteAllLines(filePath, stringArray);
       }
 
-      // Обновлен метод + 
       public static string[] VivodArrayString(double[] inputArray)
       {
          // Объединение одномерного массива максимальных значений строк double[]
